@@ -1,0 +1,1 @@
+配置文件在Index/Common/Conf/config.php

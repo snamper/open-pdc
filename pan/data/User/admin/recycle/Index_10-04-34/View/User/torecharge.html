@@ -1,0 +1,49 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--用户中心左侧菜单-->
+    {:W('Menu/User')}
+    <!--菜单结束-->
+    <!--中心模块开始-->
+    <div class="uk-width-large-8-10">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title">{$ActionTitle}</h3>
+            <div class="uk-alert "><span class="uk-h2">注意：充值时支付宝会扣取1.5%的手续费，到帐金额保留小数点后两位。</span>
+            <br><span class="uk-h2">注意：付款后请确认收货即可成功充值。</span>
+            </div>
+            <hr class="uk-article-divider">
+            <form class="uk-form uk-form-horizontal uk-container-center uk-width-large-5-10 uk-width-small-1-1" target="_blank" method="post" action="{:U('User/makepay');}">
+                <div class="uk-form-row">
+                    <label class="uk-form-label" for="form-h-it">充值金额：</label>
+                    <div class="uk-form-controls">
+                        <input id="form-h-it" class="uk-form-danger" placeholder="最低1元，将自动取整数。" name="num" type="text">
+                        <br>
+                        <strong style="color: red;">
+                            <span class="last-recharge-text uk-hidden">最后到帐金额(估计)：
+                                <span class="last-recharge-num">0</span>
+                            </span>
+                        </strong>
+                    </div>
+                </div>
+                <br><br>
+                <button class="uk-button-large uk-button uk-button-success" disabled="true"> 充 值 （暂未完成）</button>
+				<p>人工充值</p><a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=086d2f7c01e9bbb8880e3d0df64965cb19d854728a845069fe288e543f7985b4"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="MCS售前、售后群" title="MCS售前、售后群"></a>
+            </form>
+        </div>
+    </div>
+    <!--中心模块结束-->
+</div>
+<script src="/Public/js/components/notify.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#form-h-it").blur(function(){
+            num = $(this).val();
+            num = Math.round(num);
+            if(num >= 1){
+                $(this).val(num);
+                num2 = (((1-0.015)*num).toFixed(2));
+                $('.last-recharge-num').text(num2);
+                $('.last-recharge-text').removeClass('uk-hidden');
+            }
+        });
+    });
+</script>

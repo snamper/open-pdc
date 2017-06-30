@@ -1,0 +1,17 @@
+name: ICDK
+main: CDK\Main
+version: "1.0.1"
+author: HAO
+api: [3.0.0]
+load: POSTWORLD
+
+commands:
+ 设置卡密:
+  description: 设置CDK
+  usage: "/设置卡密 <兑换码> <命令>"
+ 卡密兑换:
+  description: 兑换CDK
+  usage: "/卡密兑换 <兑换码>"
+ 卡密:
+  description: CDK说明
+  usage: "/卡密"

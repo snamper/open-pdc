@@ -1,0 +1,125 @@
+<layout name="adminhome" /><!--调用布局的模板-->
+<div class="clearfix page-title">
+    <h4><i class="icon-list-alt"></i>用户管理</h4>
+</div>
+<hr>
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                所用用户
+            </header>
+            <div class="row text-small">
+                <div class="col-lg-4 m-b-mini">
+                   <!-- <div class="btn-group">
+                        <button class="btn btn-inverse dropdown-toggle btn-small" data-toggle="dropdown">排序 <span class="caret"></span></button>
+                        <ul class="dropdown-menu bg-inverse">
+                            <li class="find-data" data-find-type="date"><a href="/admin/index/record/getData/date.html">交易日期</a></li>
+                            <li class="find-data" data-find-type="money"><a href="/admin/index/record/getData/money.html">交易金额</a></li>
+                            <li class="find-data" data-find-type="username"><a href="/admin/index/record/getData/uid.html">用户id</a></li>
+                            <li class="divider"></li>
+                            <li class="find-data" data-find-type="state"><a href="/admin/index/record/getData/state.html">交易状态</a></li>
+                        </ul>
+                    </div>-->
+                </div>
+                <div class="col-lg-4 m-b-mini">
+
+                </div>
+                <div class="col-lg-4">
+                    <form action="{:U('/Admin/Index/User')}" method="get">
+                        <div class="input-group">
+                            <input type="text" class="input-small form-control" name="find" placeholder="搜索,用户名邮箱都可以">
+                  <span class="input-group-btn">
+                    <button class="btn btn-small btn-white to-find" type="submit"> 搜索 </button>
+                  </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="pull-out m-t-small">
+                <table class="table table-striped b-t text-small">
+                    <thead>
+                    <tr>
+                        <th width="10">UID</th>
+                        <th>用户名</th>
+                        <th width="100px">账户状态</th>
+                        <th width="200px">开发者等级</th>
+                        <th>邮箱</th>
+                        <th>最后登录日期</th>
+                        <th>注册时间</th>
+                        <th>余额</th>
+                        <th width="200">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody >
+                    <foreach name="data" item="user" >
+                        <tr>
+                            <td style="vertical-align:middle">{$user.uid}</td>
+                            <td style="vertical-align:middle">{$user.username}</td>
+                            <td style="vertical-align:middle">
+                                <php>
+                                    if(!$user['userstate']==0){
+                                        switch($user['userstate']){
+                                            case 1:
+                                                echo '账户已停用';
+                                            break;
+                                            case 2:
+                                                echo '审核员';
+                                            break;
+                                            default:
+                                                echo '无法查询';
+                                            break;
+                                        }
+                                    }
+                                </php>
+                            </td>
+                            <td style="vertical-align:middle">{:GetDeveloperLevel($user);}</td>
+                            <td style="vertical-align:middle"><a href="javascript:void(0);" class="btn btn-success btn-small">{$user.email}</a></td>
+                            <td style="vertical-align:middle">{$user.lastlogintime}</td>
+                            <td style="vertical-align:middle">{$user.registerdate}</td>
+                            <td style="vertical-align:middle"><a href="javascript:void(0)" class="btn btn-danger btn-small">{$user.money}</a></td>
+
+                            <td>
+                                <div class="btn-group">
+                                    <button class="btn btn-white btn-small dropdown-toggle" data-toggle="dropdown">操作 <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{:U('/Admin/Index/Userchance',array('type'=>'developer','uid'=>$user['uid']))}" onclick="return checkgoto('设置为开发者');">设置为开发者</a></li>
+                                        <li><a href="{:U('/Admin/Index/Userchance',array('type'=>'stopuser','uid'=>$user['uid']))}" onclick="return checkgoto('停用账户');">停用账户</a></li>
+                                        <li><a href="{:U('/Admin/Index/Userchance',array('type'=>'startuser','uid'=>$user['uid']))}" onclick="return checkgoto('开启账号');">开启账号</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="{:U('/Admin/Index/Userchance',array('type'=>'ip','uid'=>$user['uid']))}" >修改服务器用户名</a></li>
+										<li><a href="#" onclick="addmoney('{:U('/Admin/Index/Userchance',array('type'=>'money','uid'=>$user['uid']))}');">充值</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </foreach>
+                    <script language="JavaScript">
+                        function checkgoto(info){
+                            check = confirm('你确定要'+info+'吗');
+                            return check;
+                        }
+						
+						function addmoney(url){
+							var money = prompt("请输入要充值的钱:","20");
+							window.location.href = url+"?money="+money;
+						}
+                    </script>
+                    </tbody>
+                </table>
+            </div>
+            <footer class="panel-footer">
+                <div class="row">
+                    <div class="col-lg-4 hidden-sm">
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <small class="text-muted inline m-t-small m-b-small">共有{$count}条记录</small>
+                    </div>
+                    <div class="col-lg-4 text-right text-center-sm">
+                        {$page}
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+</div>
+</section>
+<footer id="zan-footer">
+<section class="footer-space">
+    <div class="footer-space-line"></div>
+</section>
+	<section class="zan-copyright">
+		<div id="footer"><p>Copyright &copy; 2015-2017 MCTL | PDC插件站</p></div>
+	</section>
+</footer>
+<script src="/Public/js/jquery.min.js"></script>
+<script src="{:U('/Tools/js')}" language="JavaScript" type="text/javascript"></script>
+<script src="/Public/js/uikit.min.js"></script>
+<script src="/Public/js/components/grid.min.js" ></script>
+<script src="/Public/ckeditor/ckeditor.js" ></script>
+<script src="/Public/js/message.js" ></script>
+<script type="text/javascript" src="/Public/js/bootstrap-zan.js"></script>
+<script type="text/javascript" src="/Public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/Public/js/audio.min.js"></script>
+<script type="text/javascript" src="/Public/js/zan.js"></script>
+<script>
+    $(function(){
+        $("#aFloatTools_Show").click(function(){
+            $('#divFloatToolsView').animate({width:'show',opacity:'show'},100,function(){$('#divFloatToolsView').show();});
+            $('#aFloatTools_Show').hide();
+            $('#aFloatTools_Hide').show();              
+        });
+        $("#aFloatTools_Hide").click(function(){
+            $('#divFloatToolsView').animate({width:'hide', opacity:'hide'},100,function(){$('#divFloatToolsView').hide();});
+            $('#aFloatTools_Show').show();
+            $('#aFloatTools_Hide').hide();  
+        });
+    });
+</script>
+</body>
+
+</html>

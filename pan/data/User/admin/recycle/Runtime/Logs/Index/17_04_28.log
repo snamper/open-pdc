@@ -1,0 +1,3643 @@
+[ 2017-04-28T19:07:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'popl.mcs_shop' doesn't exist
+
+[ 2017-04-28T19:36:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mchub.mcs_shop' doesn't exist
+
+[ 2017-04-28T19:36:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mchub.mcs_server' doesn't exist
+
+[ 2017-04-28T19:37:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_plugin` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ShopName' in 'field list'
+
+[ 2017-04-28T19:37:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_plugin` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SID' in 'order clause'
+
+[ 2017-04-28T19:38:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_plugin` [ RunTime:0.0060s ]
+SQL: SELECT `UserName`,`Title`,`FindQQ`,`Version`,`UpdateTime`,`Data`,`downloads`,`PID`,`Thumburl`,`Action`,`Content` FROM mcs_plugin s INNER JOIN mcs_user ON s.UID = mcs_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,PID desc LIMIT 0,25   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mcs_plugin` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\MPR\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:38:02+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:38:10+08:00 ] 127.0.0.1 /Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0040s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.057061s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.057061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:38:10+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:38:18+08:00 ] 127.0.0.1 /Login/ToLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `mcs_user` WHERE ( UserName ='admin' )  [ RunTime:0.0010s ]
+SQL: UPDATE `mcs_user` SET `IfLock`='127.0.0.1',`LastLoginTime`='2017-04-28' WHERE ( UID = '2' ) [ RunTime:0.0030s ]
+
+[ 2017-04-28T19:38:24+08:00 ] 127.0.0.1 /User.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012001s ]
+SQL: SHOW COLUMNS FROM `mcs_message` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mcs_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:38:25+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:39:24+08:00 ] 127.0.0.1 /Developer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0070s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:39:24+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:39:27+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:39:27+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:39:28+08:00 ] 127.0.0.1 /Developer/js/main.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:js
+
+[ 2017-04-28T19:43:44+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0070s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:43:44+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:44:37+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:44:38+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:44:54+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0080s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:44:54+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:46:06+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:46:06+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:46:20+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:46:21+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-28T19:50:58+08:00 ] 127.0.0.1 /Index/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_plugin` [ RunTime:0.0060s ]
+SQL: SELECT `UserName`,`Title`,`FindQQ`,`Version`,`UpdateTime`,`Data`,`downloads`,`PID`,`Thumburl`,`Action`,`Content` FROM mcs_plugin s INNER JOIN mcs_user ON s.UID = mcs_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,PID desc LIMIT 0,25   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mcs_plugin` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\MPR\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T19:50:58+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T19:51:52+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+SQL: SHOW COLUMNS FROM `mcs_message` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mcs_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:51:52+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-28T19:51:56+08:00 ] 127.0.0.1 /Developer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0040s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-28T19:51:56+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-28T19:51:58+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:51:58+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-28T19:52:01+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0040s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:52:01+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:52:05+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:52:05+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-04-28T19:52:25+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0070s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:52:25+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:53:04+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:53:04+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:54:14+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-28T19:54:14+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-28T19:54:27+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:54:27+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:57:57+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:57:57+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:58:16+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0040s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T19:58:16+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-28T20:01:34+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0040s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:01:34+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-28T20:02:57+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:02:57+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-28T20:03:33+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:03:33+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-28T20:06:40+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0040s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:06:40+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-28T20:06:43+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:06:43+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:06:46+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:06:46+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:06:58+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:07:13+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T20:07:13+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:07:22+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:07:45+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0070s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T20:07:45+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:07:53+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:14:00+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-28T20:14:01+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T20:14:10+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:14:47+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+    [ebeadcc699ea58bf56c821c15ad4677a] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:14:47+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:14:47+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:22:55+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+    [ebeadcc699ea58bf56c821c15ad4677a] => NULL
+    [ff14c9fa36a145f19fb5498e1de8c41d] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:22:55+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-28T20:22:56+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:23:15+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+    [ebeadcc699ea58bf56c821c15ad4677a] => NULL
+    [ff14c9fa36a145f19fb5498e1de8c41d] => NULL
+    [ad1ad6254fce094ad28e16d134677a53] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:23:15+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:23:15+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:23:19+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+    [ebeadcc699ea58bf56c821c15ad4677a] => NULL
+    [ff14c9fa36a145f19fb5498e1de8c41d] => NULL
+    [ad1ad6254fce094ad28e16d134677a53] => NULL
+    [6759825db75c151b00f398117b80bed2] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:23:19+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-28T20:23:20+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:23:34+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+    [ebeadcc699ea58bf56c821c15ad4677a] => NULL
+    [ff14c9fa36a145f19fb5498e1de8c41d] => NULL
+    [ad1ad6254fce094ad28e16d134677a53] => NULL
+    [6759825db75c151b00f398117b80bed2] => NULL
+    [523bb4c80f7edb0cdcf4bcd854f79c03] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0070s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:23:34+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-28T20:23:35+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:24:50+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+    [ebeadcc699ea58bf56c821c15ad4677a] => NULL
+    [ff14c9fa36a145f19fb5498e1de8c41d] => NULL
+    [ad1ad6254fce094ad28e16d134677a53] => NULL
+    [6759825db75c151b00f398117b80bed2] => NULL
+    [523bb4c80f7edb0cdcf4bcd854f79c03] => NULL
+    [7fccf23c42cf02894c79e6fb9a32f30c] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:24:51+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:24:51+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:27:06+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+    [ebeadcc699ea58bf56c821c15ad4677a] => NULL
+    [ff14c9fa36a145f19fb5498e1de8c41d] => NULL
+    [ad1ad6254fce094ad28e16d134677a53] => NULL
+    [6759825db75c151b00f398117b80bed2] => NULL
+    [523bb4c80f7edb0cdcf4bcd854f79c03] => NULL
+    [7fccf23c42cf02894c79e6fb9a32f30c] => NULL
+    [2cc506cd833113e002a31b6feec00957] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:27:06+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-28T20:27:07+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:27:35+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `mcs_file` WHERE `UID` = 2 AND `FileMd5` = null  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0080s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'FileName' cannot be null
+
+[ 2017-04-28T20:29:06+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:29:48+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:33:49+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mcs_file` WHERE `UID` = 2 AND `FileMd5` = null  [ RunTime:0.0000s ]
+
+[ 2017-04-28T20:34:16+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mcs_file` WHERE `UID` = 2 AND `FileMd5` = null  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:34:56+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_file` WHERE `UID` = 2 AND `FileMd5` = null  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-28T20:35:16+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: md5 D:\phpStudy\MPR\Index\Index\Controller\ToolsController.class.php 第 23 行.
+SQL: SELECT * FROM `mcs_file` WHERE `UID` = 2 AND `FileMd5` = null  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-04-28T20:35:40+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_file` WHERE `UID` = 2 AND `FileMd5` = null  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:36:38+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\MPR\ThinkPHP\Library\Think\Upload.class.php 第 173 行.
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_file` WHERE `UID` = 2 AND `FileMd5` = '3c07f62e4adeecd708ff507bd0d9e299'  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:37:10+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\MPR\ThinkPHP\Library\Think\Upload.class.php 第 173 行.
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mcs_file` WHERE `UID` = 2 AND `FileMd5` = '4eb09b75183d6ad4b3850a9a6165341c'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0080s ]
+SQL: INSERT INTO `mcs_file` (`UID`,`FileName`,`FileMd5`,`Url`,`FileDate`) VALUES ('2','plugin-646.phar','4eb09b75183d6ad4b3850a9a6165341c','plugin-646.phar','1493383030') [ RunTime:0.0030s ]
+
+[ 2017-04-28T20:39:45+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+    [ebeadcc699ea58bf56c821c15ad4677a] => NULL
+    [ff14c9fa36a145f19fb5498e1de8c41d] => NULL
+    [ad1ad6254fce094ad28e16d134677a53] => NULL
+    [6759825db75c151b00f398117b80bed2] => NULL
+    [523bb4c80f7edb0cdcf4bcd854f79c03] => NULL
+    [7fccf23c42cf02894c79e6fb9a32f30c] => NULL
+    [2cc506cd833113e002a31b6feec00957] => NULL
+    [21f65fb051e5ad834508b08e42579178] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:39:46+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-28T20:39:46+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:39:54+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\MPR\ThinkPHP\Library\Think\Upload.class.php 第 173 行.
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_file` WHERE `UID` = 2 AND `FileMd5` = '3cc0d8a2c774ee4c5004da15953e3753'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0080s ]
+SQL: INSERT INTO `mcs_file` (`UID`,`FileName`,`FileMd5`,`Url`,`FileDate`) VALUES ('2','plugin-698.phar','3cc0d8a2c774ee4c5004da15953e3753','/Public/Developer/Plugin/2/plugin-698.phar','1493383194') [ RunTime:0.0000s ]
+
+[ 2017-04-28T20:43:06+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+    [ebeadcc699ea58bf56c821c15ad4677a] => NULL
+    [ff14c9fa36a145f19fb5498e1de8c41d] => NULL
+    [ad1ad6254fce094ad28e16d134677a53] => NULL
+    [6759825db75c151b00f398117b80bed2] => NULL
+    [523bb4c80f7edb0cdcf4bcd854f79c03] => NULL
+    [7fccf23c42cf02894c79e6fb9a32f30c] => NULL
+    [2cc506cd833113e002a31b6feec00957] => NULL
+    [21f65fb051e5ad834508b08e42579178] => NULL
+    [37f21d1cf7b33909f53a18a26f76dc5f] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0090s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-28T20:43:06+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T20:43:07+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:43:13+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\MPR\ThinkPHP\Library\Think\Upload.class.php 第 173 行.
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_file` WHERE `UID` = 2 AND `FileMd5` = 'c6fb351611b34cc2615f455188a157b9'  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0050s ]
+SQL: INSERT INTO `mcs_file` (`UID`,`FileName`,`FileMd5`,`Url`,`FileDate`) VALUES ('2','Temp.phar','c6fb351611b34cc2615f455188a157b9','/Public/Developer/Plugin/2/Temp.phar','1493383393') [ RunTime:0.0000s ]
+
+[ 2017-04-28T20:48:00+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+    [ebeadcc699ea58bf56c821c15ad4677a] => NULL
+    [ff14c9fa36a145f19fb5498e1de8c41d] => NULL
+    [ad1ad6254fce094ad28e16d134677a53] => NULL
+    [6759825db75c151b00f398117b80bed2] => NULL
+    [523bb4c80f7edb0cdcf4bcd854f79c03] => NULL
+    [7fccf23c42cf02894c79e6fb9a32f30c] => NULL
+    [2cc506cd833113e002a31b6feec00957] => NULL
+    [21f65fb051e5ad834508b08e42579178] => NULL
+    [37f21d1cf7b33909f53a18a26f76dc5f] => NULL
+    [5fccdc6d818e1f7126f72f7a5665365d] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:48:00+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:48:01+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-04-28T20:48:08+08:00 ] 127.0.0.1 /Tools/UploadPhar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\MPR\ThinkPHP\Library\Think\Upload.class.php 第 173 行.
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `mcs_file` WHERE `UID` = 2 AND `FileMd5` = 'b596a1ab66f533444ca98a4b6bbd4da4'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_file` [ RunTime:0.0060s ]
+SQL: INSERT INTO `mcs_file` (`UID`,`FileName`,`FileMd5`,`Url`,`FileDate`) VALUES ('2','plugin-894.phar','b596a1ab66f533444ca98a4b6bbd4da4','/Public/Developer/Plugin/2/plugin-894.phar','1493383688') [ RunTime:0.0010s ]
+
+[ 2017-04-28T20:49:15+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `mcs_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 308 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Index\Controller\DeveloperController.class.php 第 309 行.
+DEBUG: Array
+(
+    [UserName] => admin
+    [UID] => 2
+    [e487f66a9db69225206e417ffe842c61] => NULL
+    [a85f9267e45fa4c3641742d8b891574b] => NULL
+    [5a50939a34b6360cfac0262799d035b1] => NULL
+    [cdde08a2559df4144f87e23e7992caff] => NULL
+    [7661206cd4bb6547684cacd71d11f923] => NULL
+    [4941dfc5f29987ed6f95b4d98b36db58] => NULL
+    [ad5078c357ce5c4280f1071815edfa76] => NULL
+    [929528f47f1fd5d89fc5c894671cf99c] => NULL
+    [e3fdf4ad5d0f5c2b3cbfd2157e243c5c] => NULL
+    [f7b19aca85de2cc6965aae921848d140] => NULL
+    [4018e933efd5f841f13f6570085158a1] => NULL
+    [f2c7270f198e3559eab264511734421e] => NULL
+    [77495b5fc31e47ce21675057ad116df9] => NULL
+    [46ba15aa607efa5b079eb318a9194eac] => NULL
+    [75ec6e44654e3ad2bd400b49a9fa7869] => NULL
+    [c7abc6976254f89fbee49d8a54bc0f74] => NULL
+    [be8371fe7fe7dbe99f99a4b1e49224c5] => NULL
+    [d64780871d3e835f904177057c7d66d5] => NULL
+    [58d20641e5ea1b4ee15686ddbb544a5b] => NULL
+    [44e95b7e446e592cc5e6e4fe383c5b8d] => NULL
+    [ba52135998d7c818350deed5489512a3] => NULL
+    [984982a4623ca5bc4c10b813ef9ed946] => NULL
+    [f10a963a2acf164984ae752e52ce3fa8] => NULL
+    [ebeadcc699ea58bf56c821c15ad4677a] => NULL
+    [ff14c9fa36a145f19fb5498e1de8c41d] => NULL
+    [ad1ad6254fce094ad28e16d134677a53] => NULL
+    [6759825db75c151b00f398117b80bed2] => NULL
+    [523bb4c80f7edb0cdcf4bcd854f79c03] => NULL
+    [7fccf23c42cf02894c79e6fb9a32f30c] => NULL
+    [2cc506cd833113e002a31b6feec00957] => NULL
+    [21f65fb051e5ad834508b08e42579178] => NULL
+    [37f21d1cf7b33909f53a18a26f76dc5f] => NULL
+    [5fccdc6d818e1f7126f72f7a5665365d] => NULL
+    [385f7e72f2c967c870c8373689727b50] => NULL
+)
+
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: url D:\phpStudy\MPR\Index\Runtime\Cache\Index\de3c1b31cea62ae50d23efb96e598f3e.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T20:49:15+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-28T20:49:15+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+

@@ -1,0 +1,61 @@
+<layout name="adminhome" /><!--调用布局的模板-->
+<div class="clearfix page-title">
+    <h4><i class="icon-list-alt"></i>用户插件管理</h4>
+</div>
+<hr>
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                用户[{$userData.username}]
+            </header>
+            <div class="pull-out m-t-small">
+                <table class="table table-striped b-t text-small">
+                    <thead>
+                    <tr>
+                        <th width="10">Index</th>
+                        <th width="100px">SID</th>
+                        <th width="200px">名称</th>
+                        <th>ip</th>
+                        <th>端口</th>
+                        <th width="200">重置ip更新权利</th>
+                    </tr>
+                    </thead>
+                    <tbody >
+                    <foreach name="userPlugin" item="one" >
+                        <tr>
+                            <td style="vertical-align:middle">{$key}</td>
+                            <td style="vertical-align:middle">{$one.sid}</td>
+                            <td style="vertical-align:middle"><a href="javascript:void(0);" class="btn btn-success btn-small">{$one.shopname}</a></td>
+                            <td style="vertical-align:middle">{$one.ip}</td>
+                            <td style="vertical-align:middle"><a href="javascript:void(0)" class="btn btn-danger btn-small">{$one.port}</a></td>
+                            <td>
+                                <a target="_blank" href="{:U('/Admin/Index/Userchanceip',array('index'=>$key,'uid'=>$userData['uid']))}" onclick="return ifchance()"><button class="btn btn-white btn-small" >重置</button></a>
+                            </td>
+                        </tr>
+                    </foreach>
+                    <script language="JavaScript">
+                        function ifchance(){
+                            check = confirm('你确定要重置此插件的更改ip权限吗');
+                            return check;
+                        }
+                    </script>
+                    </tbody>
+                </table>
+            </div>
+            <footer class="panel-footer">
+                <div class="row">
+                    <div class="col-lg-4 hidden-sm">
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <small class="text-muted inline m-t-small m-b-small">共有{$count}条记录</small>
+                    </div>
+                    <div class="col-lg-4 text-right text-center-sm">
+                        {$page}
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+</div>
+

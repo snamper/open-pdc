@@ -1,0 +1,46 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--用户中心左侧菜单-->
+    {:W('Menu/Developer')}
+    <!--菜单结束-->
+    <!--中心模块开始-->
+    <div class="uk-width-large-8-10">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title">提现申请</h3>
+            <hr class="uk-article-divider">
+            <form onsubmit="return check(this)" class="uk-form uk-form-horizontal uk-container-center uk-width-large-5-10 uk-width-small-1-1" target="_blank" method="post" action="{:U('Developer/atm');}">
+                <div class="uk-form-row">
+                    <label class="uk-form-label" for="form-h-it">提现金额：</label>
+                    <div class="uk-form-controls">
+                        <input id="form-h-it" placeholder="最低100元，将自动取整数。" name="num" type="text">
+                    </div>
+                </div>
+                <div class="uk-form-row">
+                    <label class="uk-form-label" for="form-h-it2">支付宝账户：</label>
+                    <div class="uk-form-controls">
+                        <input id="form-h-it2" placeholder="如果不填写我们将不受理" name="togive" type="text">
+                    </div>
+                </div>
+                <div class="uk-form-row">
+                    <label class="uk-form-label" for="form-h-it3">支付宝账户姓名：</label>
+                    <div class="uk-form-controls">
+                        <input id="form-h-it3" placeholder="支付宝账户姓名" name="name" type="text">
+                    </div>
+                </div>
+                <small>目前只支持支付宝提现，请见谅。</small><br><br>
+                <button class="uk-button-large uk-button uk-button-success">申请</button>
+            </form>
+        </div>
+    </div>
+    <!--中心模块结束-->
+</div>
+<script src="/Public/js/components/notify.min.js"></script>
+<script>
+    function check(e){
+        num = $(e).find('#form-h-it').val();
+        if(num<100){
+            umessage('<i class="uk-icon-refresh uk-icon-circle" style="color: #ff1c04 ;"></i> 金额需要大于100元',{ status:'info',timeout:1000,pos:'bottom-right'});
+            return false;
+        }
+    }
+</script>

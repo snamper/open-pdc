@@ -1,0 +1,1 @@
+a:6:{i:0;s:3:"bid";i:1;s:3:"uid";i:2;s:7:"content";i:3;s:4:"time";s:3:"_pk";s:3:"bid";s:5:"_type";a:4:{s:3:"bid";s:7:"int(11)";s:3:"uid";s:7:"int(11)";s:7:"content";s:4:"text";s:4:"time";s:9:"timestamp";}}

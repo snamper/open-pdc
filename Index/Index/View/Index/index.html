@@ -1,0 +1,137 @@
+<layout name="home" /><!--调用布局的模板-->
+<script src="/Public/js/bootstrap-typeahead.js"></script>
+<script src="/Public/js/bloodhound.js"></script>
+<div class="row">
+<aside class="col-md-4" id="sidebar">
+	<aside id="zan_posts_category-2">
+		<div class="panel panel-zan">
+			<div class="panel-heading">公告</div>
+			<div style="margin-left: 20px;margin-top: 10px;margin-right: 20px;padding-bottom: 20px;">
+			{:getHeaderNotice()}</div>
+		</div>
+	</aside>
+	<aside id="zan_posts_category-2">
+		<div class="panel panel-zan">
+			<div class="panel-heading">搜索</div>
+			<ul class="list-group">
+		<form method="get" id="searchform" class="form-inline clearfix" action="{:U('/Find')}">
+			<input class="form-control" type="text" name="search" id="search" placeholder="搜索关键词..." autocomplete="off">
+			<button class="btn btn-zan-solid-pi btn-small" id="wd" onclick="submit();"><i class="fa fa-search"></i> 查找</button>
+			<script language="javascript">
+			var wd = $('#search');
+
+			var updater = new Bloodhound({
+			  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('search'),
+			  queryTokenizer: Bloodhound.tokenizers.whitespace,
+			  local:  ['其他', '地图生成器', '地图编辑&管理', '机械', '传送', '信息', '综合', '经济', '开发者工具', '聊天', '反恶意工具', '管理工具'],
+			  remote: {
+			      url: '{:U('/Tools/keyword')}?wd=%QUERY',
+			      wildcard: '%QUERY',
+			  }
+			});
+			
+			updater.initialize();
+			
+			wd.typeahead({
+			  name: 'search',
+			  displayKey: 'search',
+			  source: updater.ttAdapter(),
+			  autoSelect: true,
+			  fitToElement: true,
+			});
+
+			var keywords;
+			/*wd.keyup(function(){
+				if(wd.val().length != 0){
+					$.get('{:U('/Tools/keyword')}', {wd: (wd.val())}, function(data){
+						console.log(data);
+						updater.add(data);
+					}, 'json');
+				}
+			});*/
+			</script>
+		</form>
+	</ul>
+		</div>
+	</aside>
+	{:W('Index/Tool/indexShow')}
+</aside>
+
+      <div class="col-md-8" id="mainstay">
+<volist name="PlugData" id="Plug">
+        <php>
+            $Plug['data'] = CJson($Plug['data'],true);
+			if(empty($Plug['thumburl'])){
+				$Plug['thumburl'] = '/Public/images/mcbackground.jpg';
+			}
+			if($Plug['or'] == 0){
+				$Plug['title'] = '[原创] ' . $Plug['title'];
+			} else {
+				$Plug['title'] = '[转载] ' . $Plug['title'];
+			}
+        </php>
+<div id="article-list">
+<article class="zan-post clearfix">
+ <i class="fa fa-bookmark article-stick"></i> 
+	<!-- 大型设备文章显示 -->
+	<section class="visible-md visible-lg">
+    <div class="category-cloud"><a rel="category tag">{:getCatelogue($Plug['catelogue'])}</a></div>
+		<h3>
+			<a href="<?php echo U('/Plugin/'.$Plug['pid']); ?>">{$Plug.title}</a>
+		</h3>
+		<hr>
+                  <div class="row">
+          <div class="col-md-5">
+            <figure class="thumbnail zan-thumb"><a href="<?php echo U('/Plugin/'.$Plug['pid']); ?>"><img width="400" height="240" src="{$Plug['thumburl']}" data-original="{$Plug['thumburl']}" class="lazy attachment-medium wp-post-image" alt="banner_10" style="height: 166.79999999999998px; display: block;"><noscript><img width="400" height="240" src="{$Plug['thumburl']}" class="attachment-medium wp-post-image" alt="banner_10" /></noscript></a></figure>  
+          </div>            
+          <div class="col-md-7 visible-lg zan-outline">
+			<ul id="zi"><?php echo mb_substr(str_replace(array(' ','='),'',strip_tags(html_entity_decode($Plug['content']))), 0, 99, 'utf-8');?>....</ul></div>
+          <div class="col-md-7 visible-md zan-outline">         
+           
+          </div>
+        </div>
+       
+        <hr>
+		<div class="pull-right post-info">
+			<span><i class="fa fa-calendar"></i> {$Plug.updatetime}</span>
+			<span><i class="fa fa-user"></i> <a href="" title="由{:getCanSeeName($Plug)}发布" rel="author">{:getCanSeeName($Plug)}[{:GetDeveloperLevel($Plug)}]</a></span>
+			<span><i class="fa fa-download"></i> {$Plug.downloads}次</span>
+			<span><i class="fa fa-comment"></i> {:getPluginComments($Plug['pid'])}条</span>
+      		</div>
+	</section>
+	<!-- 大型设备文章显示结束 -->
+
+	<!-- 小型设备文章显示 -->
+	<section class="visible-xs  visible-sm">
+		<div class="title-article">
+			<h4><a href="<?php echo U('/Plugin/'.$Plug['pid']); ?>">{$Plug.title}</a></h4>
+		</div>
+		<p class="post-info">
+			<span><i class="fa fa-calendar"></i> {$Plug.updatetime}</span>
+			<span><i class="fa fa-comment"></i> {:getPluginComments($Plug['pid'])}条</span>
+			<span><i class="fa fa-tags"></i> {:getCatelogue($Plug['catelogue'])}</span>
+		</p>
+		<div class="content-article">
+      <figure class="thumbnail"><a href="<?php echo U('/Plugin/'.$Plug['pid']); ?>"><img width="750" height="450" src="{$Plug['thumburl']}" data-original="{$Plug['thumburl']}" class="lazy attachment-large wp-post-image" alt="banner_10" style="display: block;"></a></figure>		
+			<div class="well"><?php echo mb_substr(str_replace(array(' ','='),'',strip_tags(html_entity_decode($Plug['content']))), 0, 99, 'utf-8');?>....</div>
+		</div>
+		<a class="btn btn-zan-line-pp btn-block" href="<?php echo U('/Plugin/'.$Plug['pid']); ?>" title="详细阅读">阅读全文<!-- <span class="badge"></span>--></a>
+	</section>
+	<!-- 小型设备文章显示结束 -->
+
+</article>
+</div>
+</volist>
+<!-- 分页 -->
+{$page}
+<!--<div id="zan-page" class="clearfix">
+	<ul class="pagination pagination-zan pull-right">
+		<li> <a href="/">‹‹</a></li>
+		<li><span>1</span></li>
+		<li> <a href="/">››</a></li>
+	</ul>
+</div>-->
+<!-- 分页结束 -->
+</div>
+<div class="panel-heading"></div>
+</div>

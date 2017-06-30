@@ -1,0 +1,75 @@
+<layout name="adminhome" /><!--调用布局的模板-->
+<div class="clearfix page-title">
+    <h4><i class="icon-list-alt"></i>提现申请记录</h4>
+</div>
+<hr>
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                申请
+            </header>
+            <!--<div class="row text-small">-->
+                <!--<div class="col-lg-4 m-b-mini">-->
+                    <!--&lt;!&ndash;<div class="btn-group">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<button class="btn btn-inverse dropdown-toggle btn-small" data-toggle="dropdown">筛选 <span class="caret"></span></button>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<ul class="dropdown-menu bg-inverse">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<li class="find-data" data-find-type="money"><a href="{:U('/Admin/Index/Application',array('getData'=>'todo'))}">未完成</a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--</div>-->
+                <!--<div class="col-lg-4 m-b-mini">-->
+
+                <!--</div>-->
+
+            <!--</div>-->
+            <div class="pull-out m-t-small">
+                <table class="table table-striped b-t text-small">
+                    <thead>
+                    <tr>
+                        <th width="10">MID</th>
+                        <th width="150" class="th-sortable" data-toggle="class">用户UID</th>
+                        <th>备注</th>
+                        <th>查看投诉记录</th>
+                        <th>金额</th>
+                        <th>日期</th>
+                        <th width="80">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody >
+                    <foreach name="list" item="alipay" >
+                        <tr>
+                            <td style="vertical-align:middle">{$alipay.mid}</td>
+                            <td style="vertical-align:middle">{$alipay.useruid}</td>
+                            <td style="vertical-align:middle">{$alipay.note}</td>
+                            <td style="vertical-align:middle"><a target="_blank" href="{:U('Admin/Index/Massage',array('uid'=>$alipay['anumber']))}" class="btn btn-success btn-small">点击查看</a></td>
+                            <td style="vertical-align:middle"><a href="javascript:void(0)" class="btn btn-danger btn-small">{$alipay.number}</a></td>
+                            <td style="vertical-align:middle">{$alipay.date}</td>
+                            <td>
+                            <!-- 需要添加支付或者撤回 -->
+                                <if condition="$alipay['state'] eq 0 ">
+                                    <a target='_blank' href="{:U('/Admin/Index/Application',array('mid'=>$alipay['mid']))}" class='btn btn-inverse btn-small'>支付</a>
+                                    <else />
+                                    <span class='btn btn-success btn-small'>完成</span>
+                                </if>
+                            </td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+            <footer class="panel-footer">
+                <div class="row">
+                    <div class="col-lg-4 hidden-sm">
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <small class="text-muted inline m-t-small m-b-small">共有{$count}条记录</small>
+                    </div>
+                    <div class="col-lg-4 text-right text-center-sm">
+                        {$page}
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+</div>

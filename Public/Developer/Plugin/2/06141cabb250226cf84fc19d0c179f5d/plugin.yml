@@ -1,0 +1,20 @@
+name: ChatPro
+version: "1.0定制"
+api: [1.9.0]
+author: zzx
+description: 聊天插件
+main: ChatPro\ChatPro
+
+commands:
+ setch:
+  description: 设置称号
+  permission: ChatPro.command.op
+  usage: /setch [id] [称号]
+ mute:
+  description: 禁言/解禁 玩家
+  permission: ChatPro.command.op
+  usage: mute [id]
+permissions:
+  ChatPro.command.op:
+    default: op
+    description: 只有OP可以使用

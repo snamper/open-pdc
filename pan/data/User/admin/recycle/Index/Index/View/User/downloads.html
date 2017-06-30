@@ -1,0 +1,76 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--用户中心左侧菜单-->
+    {:W('Menu/User')}
+    <!--菜单结束-->
+    <!--中心模块开始-->
+    <div class="uk-width-large-8-10 ">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title">{$ActionTitle}</h3>
+            <hr class="uk-article-divider">
+            <table class="uk-table uk-table-striped uk-table-hover uk-form">
+                <thead>
+                <tr>
+                    <th width="60%">插件名称</th>
+                    <th width="20%">操作</th>
+                </tr>
+                </thead>
+                <tbody style="background-color: #fff;" class="boughtData">
+                <foreach name="list" item="Shop" >
+                    <tr data-shop-id="{$key}">
+                        <td style="line-height: 27px;">{$Shop.shopname}</td>
+                        <td ><div class="uk-button-group">
+						<button class="uk-button btn-primary cusername" id="cusername"> 查看 </button>
+                        </div>
+                        </td>
+                    </tr>
+                </foreach>
+                </tbody>
+                <!--头部部分-->
+            </table>
+            {$page}
+        </div>
+    </div>
+    <!--中心模块结束-->
+</div>
+<script src="/Public/js/components/notify.min.js"></script>
+<script language="javascript">
+    $('.uk-table').on("click",".cusername",function(){
+				$(this).parent().find('.cusername').hide();
+				$(this).parent().find('.submit_username').show();
+                var Div = $(this).parent().parent().parent();
+                Username = Div.find('.shop-username').text();
+                Div.find('.shop-username').html("<input type='text' class='shop-username-input' value="+Username+">");
+				var submit_username = $(this).parent().find('.submit_username');
+				var cusername_button = $(this);
+            }
+    ).on("click",".submit_username",function(){
+        var Div = $(this).parent().parent().parent();
+        username = Div.find('.shop-username-input').val();
+        if(username == ''){
+            umessage('<i class="uk-icon-refresh uk-icon-circle" style="color: #ff0d00 ;"></i> 用户名不能为空',{status:'info',timeout:1000});
+            return;
+        }
+        if(username == Username){
+            umessage('<i class="uk-icon-refresh uk-icon-circle" style="color: #04ff70 ;"></i> 无改动',{status:'info',timeout:1000});
+            Div.find('.shop-username').html('<div class="uk-badge">'+username+'</div>');
+            $(this).parent().find('.submit_username').hide();
+			$(this).parent().find('.cusername').show();
+            return;
+        }
+        SID = $(this).attr('data-shop-sindex');
+        $.get('/User/CUserName',{'chance':SID,'username':username,'port':Div.find('.shop-port').text()},function(data){
+            if(data['state'] == '1'){
+                umessage('<i class="uk-icon-refresh uk-icon-circle" style="color: #04ff70 ;"></i> 更改成功',{status:'info',timeout:1000});
+                Div.find('.shop-username').html('<div class="uk-badge">'+username+'</div>');
+				$(this).parent().find('.submit_username').hide();
+				$(this).parent().find('.cusername').show();
+                return true;
+            }else{
+                umessage('<i class="uk-icon-refresh uk-icon-circle" style="color: #ff0d00 ;"></i> '+data['info'],{status:'info',timeout:1000});
+				console.log(data['info']);
+                return true;
+            }
+        })
+    })
+</script>

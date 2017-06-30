@@ -1,0 +1,109 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--用户中心左侧菜单-->
+    {:W('Menu/Developer')}
+    <!--菜单结束-->
+    <!--中心模块开始-->
+    <div class="uk-width-large-8-10">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title">{$ActionTitle}</h3>
+            <hr class="uk-article-divider">
+            <table class="uk-table uk-table-striped uk-table-hover">
+                <thead>
+                <tr>
+					<th>#</th>
+                    <th>插件名称</th>
+					<th class="uk-text-right">状态</th>
+                    <th class="uk-text-right">下载量</th>
+                    <th class="uk-text-right">操作</th>
+                </tr>
+                </thead>
+                <tbody style="background-color: #fff;">
+                <foreach name="ShopData" item="Plug" >
+                    <tr id="pl-{$Plug.pid}" style="">
+						<td style="line-height: 27px;">{$Plug.pid}</td>
+                        <td style="line-height: 27px;">{$Plug.title}</td>
+						<td class="uk-text-right"><?php echo ($Plug['pluginstate']==1)?'正常':'审核中...'; ?></td>
+                        <td class="uk-text-right"><div class="uk-badge">{$Plug.downloads}</div></td>
+                        <td class="uk-text-right">
+						<div class="btn-group-vertical">
+                            <a class="btn btn-success" href="{:U('/Developer/EditPlugin/', array('pid'=>$Plug['pid']))}">编辑</a>
+							<a onclick="delplug('{$Plug.pid}')" class="btn btn-danger">删除</a>
+							<?php
+							if($Plug['avaliable'] != 1){
+								echo '<li><a pid="' . $Plug['pid'] . '" class="switch btn btn-primary" mode="1">下架</a></li>';
+							} else {
+								echo '<li><a pid="' . $Plug['pid'] . '" class="switch btn btn-primary" mode="0">上架</a></li>';
+							}
+							?>
+                        </div>
+                        </td>
+                    </tr>
+                </foreach>
+                </tbody>
+				<script language="javascript">
+				function delplug(id){
+					if(confirm('你确定要删除当前插件？本操作不能被恢复！')){
+						$.ajax({
+							url: '{:U('/Developer/DelPlugin')}',
+							async: true,
+							type: 'POST',
+							dataType: 'json',
+							data: {id:id},
+							error: function(e){
+								message('error','错误',"未知原因失败");
+								console.log(e);
+							},
+							success: function(data){
+								if(data.status == '0'){
+									message('success', '成功', '插件删除成功');
+									$('#pl-'+id).css("background-color", "rgb(243, 190, 190)");
+									$('#pl-'+id).fadeOut(300);
+								} else if(data.status == '1'){
+									message('error', '错误', data.message);
+								} else {
+									message('error', '错误', '未知原因失败');
+								}
+							},
+						});
+						
+					}
+				}
+				$('.switch').click(function(){
+					var button = $(this);
+					$.ajax({
+						url: '{:U('/Developer/CAvaliable')}',
+						async: true,
+						type: 'POST',
+						dataType: 'json',
+						data: {id:$(this).attr('pid'), mode:$(this).attr('mode')},
+						error: function(e){
+							message('error','错误',"未知原因失败");
+							console.log(e);
+						},
+						success: function(data){
+							if(data.status == '0'){
+								message('success', '成功', '切换成功');
+								if($(button).attr('mode') == '0'){
+									$(button).attr('mode', 1);
+									$(button).text('下架');
+								} else {
+									$(button).attr('mode', 0);
+									$(button).text('上架');
+								}
+							} else if(data.status == '1'){
+								message('error', '错误', data.message);
+							} else {
+								message('error', '错误', '未知原因失败');
+							}
+						},
+					});
+				});
+				</script>
+                <!--头部部分-->
+            </table>
+            {$page}
+        </div>
+    </div>
+    <!--中心模块结束-->
+</div>

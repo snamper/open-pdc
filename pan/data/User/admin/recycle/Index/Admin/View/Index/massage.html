@@ -1,0 +1,160 @@
+<layout name="adminhome"/><!--调用布局的模板-->
+<section class="content-sidebar bg-white" style="margin-left: -20px;margin-top: -20px;">
+    <!-- .sidebar -->
+    <aside class="sidebar bg-lighter sidebar-small">
+        <php>
+            if(isset($uid)){
+            echo '<div class="text-center clearfix bg-white" style="padding: 10px;">正在浏览UID:'.$uid.'的未解决的投诉信息，下方的目录与此页面无关</div>';
+            }
+        </php>
+        <div class="list-group list-normal m-b-none">
+            <a href="{:U('Admin/Index/Massage',array('type'=>0,'state'=>0))}" class="list-group-item">
+                <i class="icon-inbox"></i><span class="badge m-r">{$messageNum0}</span> 未解决投诉
+            </a>
+            <a href="{:U('Admin/Index/Massage',array('type'=>0,'state'=>1))}" class="list-group-item"><i
+                    class="icon-inbox"></i><span class="badge m-r">{$messageNum2}</span> 已读投诉</a>
+            <!--<a href="{:U('Admin/Index/Massage',array('type'=>0,'state'=>0))}" class="list-group-item"><i-->
+                    <!--class="icon-inbox"></i><span class="badge m-r">{$allCount['ATMCount']}</span> 提款请求</a>-->
+            <!--<a href="/Admin/Index/Sendmassage" class="list-group-item"><i class="icon-envelope-alt"></i> 发送消息</a>-->
+        </div>
+    </aside>
+    <!-- /.sidebar -->
+    <!-- .sidebar -->
+    <aside class="sidebar sidebar-large">
+        <div class="padder header-bar bg clearfix center-align">
+            <div class=""> {$page}</div>
+        </div>
+        <div class="list-group list-normal m-t-n-xmini scroll-y scrollbar" style="max-height:400px">
+            <!--<a href="#" class="list-group-item"><small class="pull-right text-muted">三分钟以前</small><strong>盒子</strong><br><small>恭喜你中了一百万……</small></a>-->
+            <foreach name="Data" item="One">
+                <a href="javascript:void(0)" onclick="ShowMessageData(this)" class="list-group-item"
+                   style="outline: none;">
+                    <small class="pull-right text-muted">{$One['date']}</small>
+                    <strong class="name">{:getCanSeeName($One);}</strong><br>
+                    <small>{$One['content']['title']}</small>
+                    <div class="email hidden">{$One['email']}</div>
+                    <div class="mesid hidden">{$One['mesid']}</div>
+                </a>
+            </foreach>
+        </div>
+    </aside>
+    <!-- /.sidebar -->
+    <!-- .main -->
+    <section class="main message-content">
+        <div class="bg-primary clearfix padder m-b">
+            <h3 class="m-b message-title">请选择一条消息</h3>
+        </div>
+        <div class="text-small padder">
+            <div class="block clearfix">
+                <span class="message-name"></span>
+                <span class="content-email"></span>
+            </div>
+            <div id="content-message"></div>
+        </div>
+        <div class="padder">
+            <div class="btn-group" style="display: none;" id="button-group">
+                <div id="mid" class="hidden">0</div>
+                <a class="btn btn-small btn-success m-t m-b" data-toggle="modal" href="#modal" style="outline: none;"
+                   onclick="replyMessage(this)">回复</a>
+                <a class="btn btn-small btn-inverse m-t m-b" style="outline: none;"
+                   onclick="readTheMessage(this)">设为解决</a>
+                <a class="btn btn-small btn-danger m-t m-b" style="outline: none;" onclick="DelTheMessage(this)">删除</a>
+            </div>
+        </div>
+    </section>
+    <!-- /.main -->
+</section>
+<div aria-hidden="true" style="display: none;" id="modal" class="modal fade">
+    <form class="m-b-none" action="{:U('Admin/Index/Sendtomessage')}" target="_blank" id="messagesend" method="post">
+        <div class="modal-dialog pos-abt" style="margin-top:-235px; top:50%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+                            class="icon-remove"></i></button>
+                    <h4 class="modal-title" id="myModalLabel">请输入回复内容</h4></div>
+                    <div class="modal-body">
+                        <input class="form-control" name="mid" id="midsender" type="hidden">
+                        <div class="block"><label class="control-label">标题,可以写一些详细标题</label>
+                            <input class="form-control" placeholder="标题" type="text" name="title" value="管理员消息"></div>
+                        <div class="block"><label class="control-label">内容</label>
+                            <textarea class="form-control" placeholder="内容" rows="5" name="content"></textarea></div>
+                        <div class="block"><label class="control-label">回复人</label>
+                            <select name="tosender" id="">
+                                <option value="user">投诉者</option>
+                                <option value="complaint">被投诉者</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input id="res" name="res" type="reset" style="display:none;" />
+                        <button type="button" class="btn btn-small btn-primary"  onclick="return sendmessage(this)" data-dismiss="modal">
+                            发送
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script language="JavaScript">
+    function ShowMessageData(e) {
+        name = $(e).find('.name').text();
+        email = $(e).find('.email').text();
+        mesid = $(e).find('.mesid').text();
+        message = $('.message-content');
+        $.ajax({
+            url: '{:U("Admin/Index/getAjaxMessage")}',
+            data: {mid: mesid},
+            type: 'post',
+            beforeSend: function () {
+                message.find('.message-title').text('加载中……');
+            },
+            success: function (data) {
+                message.find('.message-title').text(data['title']);
+                message.find('#content-message').text(data['content']);
+                message.find('#mid').text(mesid);
+                message.find('.message-name').text(name);
+                message.find('.content-email').text(email);
+                message.find('#button-group').show();
+            }
+        })
+    }
+
+    function sendmessage(e){
+        var check;
+        $('#messagesend').find('.form-control').each(function(){
+            if($(this).val() == '') {
+                alert('信息填写不完整');
+                check = false;
+                return false;
+            }
+        });
+        if(check != false){
+            $('#messagesend').submit();
+        }
+    }
+    function replyMessage(e) {
+        $("input[name='res']").click();
+        mid = $('#mid').text();
+        $('#midsender').val(mid);
+    }
+    function DelTheMessage(e) {
+        mid = $(e).parent().find('#mid').text();
+        $.post("{:U('/Admin/Index/delMessage');}", {'mesid': mid}, function (data) {
+            if (data['state'] == 1) {
+                document.location.reload()
+            } else if (data['state'] == 0) {
+                alert('删除失败！');
+            }
+        });
+    }
+    function readTheMessage(e) {
+        mid = $(e).parent().find('#mid').text();
+        $.post("{:U('/Admin/Index/readMessage');}", {'mesid': mid}, function (data) {
+            if (data['state'] == 1) {
+                document.location.reload()
+            } else if (data['state'] == 0) {
+                alert('删除失败！');
+            }
+        });
+    }
+</script>

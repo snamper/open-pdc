@@ -1,0 +1,153 @@
+[ 2017-04-18T12:09:08+08:00 ] 61.142.176.20 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003007s ]
+SQL: SHOW COLUMNS FROM `mcs_server` [ RunTime:0.0112s ]
+SQL: SELECT `UserName`,`ShopName`,`FindQQ`,`Version`,`Price`,`UpdateTime`,`Data`,`Sales`,`SID`,`Thumburl`,`Action`,`PlayerSolt`,`CPlayerSolt`,`MemaryLimit`,`DateLimit`,`Num`,`Content` FROM mcs_server s INNER JOIN mcs_user ON s.UID = mcs_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,SID desc LIMIT 0,25   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mcs_server` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0101s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0098s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wwwroot\Xny66122012\wwwroot\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003180s ]
+
+[ 2017-04-18T17:01:23+08:00 ] 180.120.205.163 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002748s ]
+SQL: SHOW COLUMNS FROM `mcs_server` [ RunTime:0.0107s ]
+SQL: SELECT `UserName`,`ShopName`,`FindQQ`,`Version`,`Price`,`UpdateTime`,`Data`,`Sales`,`SID`,`Thumburl`,`Action`,`PlayerSolt`,`CPlayerSolt`,`MemaryLimit`,`DateLimit`,`Num`,`Content` FROM mcs_server s INNER JOIN mcs_user ON s.UID = mcs_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,SID desc LIMIT 0,25   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mcs_server` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0094s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0104s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wwwroot\Xny66122012\wwwroot\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003167s ]
+
+[ 2017-04-18T17:27:41+08:00 ] 114.231.193.86 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002336s ]
+SQL: SHOW COLUMNS FROM `mcs_server` [ RunTime:0.0109s ]
+SQL: SELECT `UserName`,`ShopName`,`FindQQ`,`Version`,`Price`,`UpdateTime`,`Data`,`Sales`,`SID`,`Thumburl`,`Action`,`PlayerSolt`,`CPlayerSolt`,`MemaryLimit`,`DateLimit`,`Num`,`Content` FROM mcs_server s INNER JOIN mcs_user ON s.UID = mcs_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,SID desc LIMIT 0,25   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mcs_server` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0087s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0093s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wwwroot\Xny66122012\wwwroot\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002980s ]
+
+[ 2017-04-18T20:01:56+08:00 ] 123.125.71.34 /Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002387s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0105s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0096s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003292s ]
+
+[ 2017-04-18T22:15:35+08:00 ] 40.77.167.123 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002563s ]
+SQL: SHOW COLUMNS FROM `mcs_server` [ RunTime:0.0112s ]
+SQL: SELECT `UserName`,`ShopName`,`FindQQ`,`Version`,`Price`,`UpdateTime`,`Data`,`Sales`,`SID`,`Thumburl`,`Action`,`PlayerSolt`,`CPlayerSolt`,`MemaryLimit`,`DateLimit`,`Num`,`Content` FROM mcs_server s INNER JOIN mcs_user ON s.UID = mcs_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,SID desc LIMIT 0,25   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `mcs_server` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mcs_option` [ RunTime:0.0094s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+SQL: SHOW COLUMNS FROM `mcs_user` [ RunTime:0.0099s ]
+SQL: SELECT `Action` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `mcs_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `mcs_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wwwroot\Xny66122012\wwwroot\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002569s ]
+

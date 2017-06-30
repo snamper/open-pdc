@@ -1,0 +1,106 @@
+<layout name="adminhome" /><!--调用布局的模板-->
+<div class="clearfix page-title">
+    <h4><i class="icon-list-alt"></i>控制版面</h4>
+</div>
+<hr>
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                最近交易记录
+            </header>
+            <div class="row text-small">
+                <div class="col-lg-4 m-b-mini">
+                    <div class="btn-group">
+                        <button class="btn btn-inverse dropdown-toggle btn-small" data-toggle="dropdown">排序 <span class="caret"></span></button>
+                        <ul class="dropdown-menu bg-inverse">
+                            <li class="find-data" data-find-type="date"><a href="{:U('/Admin/Index/Record',array('getData'=>'date'))}">交易日期</a></li>
+                            <li class="find-data" data-find-type="money"><a href="{:U('/Admin/Index/Record',array('getData'=>'money'))}">交易金额</a></li>
+                            <li class="find-data" data-find-type="username"><a href="{:U('/Admin/Index/Record',array('getData'=>'uid'))}">用户id</a></li>
+                            <li class="divider"></li>
+                            <li class="find-data" data-find-type="state"><a href="{:U('/Admin/Index/Record',array('getData'=>'state'))}">交易状态</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 m-b-mini">
+
+                </div>
+                <div class="col-lg-4">
+                    <form action="{:U('/Admin/Index/Record')}" method="get">
+                    <div class="input-group">
+                        <input type="text" class="input-small form-control" name="find" placeholder="搜索">
+                  <span class="input-group-btn">
+                    <button class="btn btn-small btn-white to-find" type="submit"> 搜索 </button>
+                  </span>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="pull-out m-t-small">
+                <table class="table table-striped b-t text-small">
+                    <thead>
+                    <tr>
+                        <th width="10">AID</th>
+                        <th width="150" class="th-sortable" data-toggle="class">用户UID</th>
+                        <th>金额</th>
+                        <th>日期</th>
+                        <th width="80">状态</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="list" item="alipay" >
+                        <tr>
+                            <td>{$alipay.aid}</td>
+                            <td>{$alipay.userid}</td>
+                            <td>{$alipay.price}</td>
+                            <td>{$alipay.adddate}</td>
+                            <td>
+                                <switch name="alipay.state">
+                                    <case value="0">
+                                        <div class="pull-left text-warning ">
+                                        <i class="icon-circle"></i><span>付款</span></div>
+                                    </case>
+                                    <case value="1">
+                                        <div class="pull-left text-success ">
+                                        <i class="icon-circle"></i><span>成功</span>
+                                    </div>
+                                    </case>
+                                    <case value="2">
+                                        <div class="pull-left text-danger ">
+                                        <i class="icon-circle"></i><span>失败</span>
+                                    </div>
+                                    </case>
+                                    <case value="3">
+                                        <div class="pull-left text-danger ">
+                                        <i class="icon-circle"></i><span>取消</span>
+                                    </div>
+                                    </case>
+                                    <case value="4">
+                                        <div class="pull-left text-warning ">
+                                        <i class="icon-circle"></i><span>收货</span></div>
+                                    </case>
+                                    <default/>
+                                    状态未知
+                                </switch>
+                            </td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+            <footer class="panel-footer">
+                <div class="row">
+                    <div class="col-lg-4 hidden-sm">
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <small class="text-muted inline m-t-small m-b-small">共有{$count}条记录</small>
+                    </div>
+                    <div class="col-lg-4 text-right text-center-sm">
+                        {$page}
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+</div>
+

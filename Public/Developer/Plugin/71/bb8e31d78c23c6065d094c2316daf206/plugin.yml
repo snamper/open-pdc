@@ -1,0 +1,23 @@
+name: ChatPro
+version: "1.0"
+api: [1.12.0]
+author: zzx
+description: 聊天插件
+main: ChatPro\ChatPro
+#本插件由Bhao修改 原作者 zzx
+#如有侵权请找我
+#QQ：657997987
+#租服首选MXTeam租服系统
+commands:
+ setch:
+  description: 设置称号
+  permission: ChatPro.command.op
+  usage: /setch [id] [称号]
+ mute:
+  description: 禁言/解禁 玩家
+  permission: ChatPro.command.op
+  usage: mute [id]
+permissions:
+  ChatPro.command.op:
+    default: op
+    description: 只有OP可以使用

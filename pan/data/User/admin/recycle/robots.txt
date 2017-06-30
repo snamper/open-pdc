@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /Admin
+Disallow: /Checker
+Disallow: /Public
+Disallow: /ThinkPHP
+Disallow: /Order

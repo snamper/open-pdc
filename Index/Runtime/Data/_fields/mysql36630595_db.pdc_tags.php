@@ -1,0 +1,1 @@
+a:7:{i:0;s:3:"tid";i:1;s:4:"mode";i:2;s:7:"content";i:3;s:5:"count";i:4;s:4:"view";s:3:"_pk";s:3:"tid";s:5:"_type";a:5:{s:3:"tid";s:7:"int(11)";s:4:"mode";s:7:"int(11)";s:7:"content";s:11:"varchar(50)";s:5:"count";s:7:"int(11)";s:4:"view";s:7:"int(11)";}}

@@ -1,0 +1,6 @@
+name: Pets
+author: BalAnce,aojiao汉化
+description: 宠物
+version: 3.0.0 
+main: pets\main
+api: [1.12.0] 

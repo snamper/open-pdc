@@ -1,0 +1,66 @@
+<layout name="adminhome" /><!--调用布局的模板-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">设置</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            网站设置
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <header class="panel-heading">公告栏</header>
+								<div class="alert alert-info">可以使用html,如果要使用css请使用bootstrap的css</div>
+								<form action="" method="post" class="uk-form" id="notice">
+									<div class="uk-grid">
+										<div class="uk-width-1-1">
+											<textarea id="header_notice" name="header_notice" class="uk-width-1-1" style="width:100%;resize: vertical;min-height: 150px;">{$header_notice}</textarea>
+										</div>
+									</div>
+									<div class="uk-grid">
+										<button class="btn btn-success" type="button" onclick='updateNotice()'><i class="fa fa-plus"></i> 保存</button>
+									</div>
+								</form>
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+<script>
+function updateNotice(){
+	/*$.ajax({
+		url: '{:U('/Admin/Index/Setting')}',
+		async: true,
+		type: 'POST',
+		dataType: 'json',
+		data: $('#notice').serialize(),
+		error: function(e){
+			message('error','错误',"未知原因失败");
+			console.log(e);
+		},
+		success: function(data){
+			if(data.status == 1){
+				message('success', '成功', '插件删除成功');
+				$('#pl-'+id).css("background-color", "rgb(243, 190, 190)");
+				$('#pl-'+id).fadeOut(300);
+			} else if(data.status == 0){
+				message('error', '错误', data.message);
+			} else {
+				message('error', '错误', '未知原因失败');
+			}
+		},
+	});*/
+	$('#notice').submit();
+}
+</script>
+<script type="text/javascript" src="/Public/ckeditor/ckeditor.js"></script>

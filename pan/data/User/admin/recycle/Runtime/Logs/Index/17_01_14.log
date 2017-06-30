@@ -1,0 +1,3123 @@
+[ 2017-01-14T15:35:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0070s ]
+SQL: SELECT `UserName`,`ShopName`,`FindQQ`,`Version`,`Price`,`UpdateTime`,`Data`,`Sales`,`SID`,`Thumburl`,`Action`,`PlayerSolt`,`CPlayerSolt`,`MemaryLimit`,`DateLimit`,`Num`,`Content` FROM pmplugin_shop s INNER JOIN pmplugin_user ON s.UID = pmplugin_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,SID desc LIMIT 0,25   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_shop` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:35:07+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-14T15:35:15+08:00 ] 127.0.0.1 /Register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0100s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '-1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0070s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.051061s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.051061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:35:15+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:35:16+08:00 ] 127.0.0.1 /Register/Verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-14T15:35:18+08:00 ] 127.0.0.1 /Register/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE ( UserName ='admin' )  [ RunTime:0.0000s ]
+SQL: UPDATE `pmplugin_user` SET `IfLock`='127.0.0.1',`LastLoginTime`='2017-01-14' WHERE ( UID = '2' ) [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:35:21+08:00 ] 127.0.0.1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0070s ]
+SQL: SELECT `UserName`,`ShopName`,`FindQQ`,`Version`,`Price`,`UpdateTime`,`Data`,`Sales`,`SID`,`Thumburl`,`Action`,`PlayerSolt`,`CPlayerSolt`,`MemaryLimit`,`DateLimit`,`Num`,`Content` FROM pmplugin_shop s INNER JOIN pmplugin_user ON s.UID = pmplugin_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,SID desc LIMIT 0,25   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_shop` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0070s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:35:22+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-14T15:35:25+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+SQL: SHOW COLUMNS FROM `pmplugin_message` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:35:25+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-14T15:35:30+08:00 ] 127.0.0.1 /Developer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-14T15:35:30+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:35:33+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\WWW\Index\Index\Controller\DeveloperController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pmplugin_option` LIMIT 1   [ RunTime:0.0010s ]
+DEBUG: Array
+(
+    [gtsdk] => 1
+    [UserName] => admin
+    [UID] => 2
+)
+
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:35:33+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:36:48+08:00 ] 127.0.0.1 /Publicckfinder/core/connector/php/connector.php?command=QuickUpload&amp;type=Images&CKEditor=editor&CKEditorFuncNum=1&langCode=zh-cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Publicckfinder
+
+[ 2017-01-14T15:37:35+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T15:38:04+08:00 ] 127.0.0.1 /Publicckfinder/core/connector/php/connector.php?command=QuickUpload&amp;type=Images&CKEditor=editor&CKEditorFuncNum=1&langCode=zh-cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Publicckfinder
+
+[ 2017-01-14T15:38:38+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\WWW\Index\Index\Controller\DeveloperController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_option` LIMIT 1   [ RunTime:0.0000s ]
+DEBUG: Array
+(
+    [gtsdk] => 1
+    [UserName] => admin
+    [UID] => 2
+    [cf71068c2ea786f2c3eb643199954b65] => NULL
+)
+
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-14T15:38:38+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:38:39+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T15:38:51+08:00 ] 127.0.0.1 /Publicckfinder/core/connector/php/connector.php?command=QuickUpload&amp;type=Images&CKEditor=editor&CKEditorFuncNum=1&langCode=zh-cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Publicckfinder
+
+[ 2017-01-14T15:40:16+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\WWW\Index\Index\Controller\DeveloperController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_option` LIMIT 1   [ RunTime:0.0000s ]
+DEBUG: Array
+(
+    [gtsdk] => 1
+    [UserName] => admin
+    [UID] => 2
+    [cf71068c2ea786f2c3eb643199954b65] => NULL
+    [97814f3a679eb31258162c7f8f308d6c] => NULL
+)
+
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-14T15:40:16+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-01-14T15:40:16+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T15:40:56+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\WWW\Index\Index\Controller\DeveloperController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `pmplugin_option` LIMIT 1   [ RunTime:0.0010s ]
+DEBUG: Array
+(
+    [gtsdk] => 1
+    [UserName] => admin
+    [UID] => 2
+    [cf71068c2ea786f2c3eb643199954b65] => NULL
+    [97814f3a679eb31258162c7f8f308d6c] => NULL
+    [0c9d216366c01e7922385fa1cb6d63ad] => NULL
+)
+
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-14T15:40:57+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:40:59+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T15:41:03+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\WWW\Index\Index\Controller\DeveloperController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_option` LIMIT 1   [ RunTime:0.0000s ]
+DEBUG: Array
+(
+    [gtsdk] => 1
+    [UserName] => admin
+    [UID] => 2
+    [cf71068c2ea786f2c3eb643199954b65] => NULL
+    [97814f3a679eb31258162c7f8f308d6c] => NULL
+    [0c9d216366c01e7922385fa1cb6d63ad] => NULL
+    [a567d290f61c36a449e63e08eeffa463] => NULL
+)
+
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:41:03+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-14T15:41:04+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T15:42:12+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\WWW\Index\Index\Controller\DeveloperController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_option` LIMIT 1   [ RunTime:0.0000s ]
+DEBUG: Array
+(
+    [gtsdk] => 1
+    [UserName] => admin
+    [UID] => 2
+    [cf71068c2ea786f2c3eb643199954b65] => NULL
+    [97814f3a679eb31258162c7f8f308d6c] => NULL
+    [0c9d216366c01e7922385fa1cb6d63ad] => NULL
+    [a567d290f61c36a449e63e08eeffa463] => NULL
+    [ac745bf84f9b4b10a907b2eeffaf182e] => NULL
+)
+
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-14T15:42:12+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-01-14T15:42:12+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T15:44:14+08:00 ] 127.0.0.1 /Developer/NewPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: UID D:\phpStudy\WWW\Index\Index\Controller\DeveloperController.class.php 第 121 行.
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_option` LIMIT 1   [ RunTime:0.0010s ]
+DEBUG: Array
+(
+    [gtsdk] => 1
+    [UserName] => admin
+    [UID] => 2
+    [cf71068c2ea786f2c3eb643199954b65] => NULL
+    [97814f3a679eb31258162c7f8f308d6c] => NULL
+    [0c9d216366c01e7922385fa1cb6d63ad] => NULL
+    [a567d290f61c36a449e63e08eeffa463] => NULL
+    [ac745bf84f9b4b10a907b2eeffaf182e] => NULL
+    [45fac148ac2a34eb097d979ee287bd16] => NULL
+)
+
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( name = 'Version' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:44:14+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:44:23+08:00 ] 127.0.0.1 /Tools/upImg?CKEditor=editor&CKEditorFuncNum=1&langCode=zh-cn
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ThinkPHP\Library\Think\Upload.class.php 第 173 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:46:36+08:00 ] 127.0.0.1 /Developer/AddPlugin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: Some D:\phpStudy\WWW\Index\Index\Controller\DeveloperController.class.php 第 30 行.
+SQL: SELECT * FROM `pmplugin_shop` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE `ShopName` = '测试服务器' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Model\ShopModel.class.php 第 30 行.
+SQL: INSERT INTO `pmplugin_shop` (`ShopName`,`Content`,`Version`,`Price`,`FindQQ`,`TAGS`,`UID`,`ApiUserName`,`ApiKey`,`ApiUrl`,`PlayerSolt`,`MemaryLimit`,`DateLimit`,`Num`,`PluginState`,`UpdateTime`,`ThumbUrl`) VALUES ('测试服务器','&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;/Public/ckfinder/userfiles/images2///5879d6d7a14bf.png&quot; style=&quot;height:609px; width:1347px&quot; /&gt;&lt;/p&gt;
+','1.0.0','10','1587937102',',自定义人数,','2','chs','mmmmm','http://www.mctpa.net/','1000','1024','30','10','1','2017-01-14','/Public/ckfinder/userfiles/images2///5879d6d7a14bf.png') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:46:37+08:00 ] 127.0.0.1 /Developer.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:46:37+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:46:41+08:00 ] 127.0.0.1 /Index/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0050s ]
+SQL: SELECT `UserName`,`ShopName`,`FindQQ`,`Version`,`Price`,`UpdateTime`,`Data`,`Sales`,`SID`,`Thumburl`,`Action`,`PlayerSolt`,`CPlayerSolt`,`MemaryLimit`,`DateLimit`,`Num`,`Content` FROM pmplugin_shop s INNER JOIN pmplugin_user ON s.UID = pmplugin_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,SID desc LIMIT 0,25   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_shop` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-14T15:46:42+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:47:44+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 414 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0040s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\CommentWidget.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.019002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 149 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 150 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 152 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 158 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 161 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 167 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 170 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 176 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 179 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 185 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:47:44+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:48:33+08:00 ] 127.0.0.1 /Index/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0050s ]
+SQL: SELECT `UserName`,`ShopName`,`FindQQ`,`Version`,`Price`,`UpdateTime`,`Data`,`Sales`,`SID`,`Thumburl`,`Action`,`PlayerSolt`,`CPlayerSolt`,`MemaryLimit`,`DateLimit`,`Num`,`Content` FROM pmplugin_shop s INNER JOIN pmplugin_user ON s.UID = pmplugin_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,SID desc LIMIT 0,25   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_shop` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:48:33+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-14T15:50:30+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 414 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\CommentWidget.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 149 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 150 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 152 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 158 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 161 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 167 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 170 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 176 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 179 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 185 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 188 行.
+NOTIC: [8] Undefined index: DateLimit D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 216 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:50:30+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:51:23+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 414 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\CommentWidget.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 149 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 150 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 152 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 158 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 161 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 167 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 170 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 176 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 179 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 185 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-14T15:51:23+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:51:53+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 414 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\CommentWidget.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 149 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 150 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 152 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 158 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 161 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 167 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 170 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 176 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 179 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 185 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T15:51:53+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:01:11+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 414 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0040s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\CommentWidget.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 149 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 150 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 152 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 158 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 161 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 167 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 170 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 176 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 179 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 185 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:01:18+08:00 ] 127.0.0.1 /User/BuyShop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+
+[ 2017-01-14T16:01:24+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:01:31+08:00 ] 127.0.0.1 /User/BuyShop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+
+[ 2017-01-14T16:01:43+08:00 ] 127.0.0.1 /User/BuyShop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+
+[ 2017-01-14T16:03:29+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 414 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0040s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\CommentWidget.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.019001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 149 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 150 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 152 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 158 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 161 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 167 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 170 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 176 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 179 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 185 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-01-14T16:03:30+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 414 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\CommentWidget.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 149 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 150 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 152 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 158 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 161 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 167 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 170 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 176 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 179 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 185 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:03:30+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:03:31+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:03:52+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 414 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\CommentWidget.class.php 第 22 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 149 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 150 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 152 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 158 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 161 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 167 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 170 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 176 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 179 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 185 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-14T16:03:52+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-01-14T16:03:52+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:07:11+08:00 ] 127.0.0.1 /User/BuyShop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_costrecord` [ RunTime:0.0080s ]
+SQL: INSERT INTO `pmplugin_costrecord` (`Anumber`,`Date`,`Number`,`State`,`UserUID`,`Type`,`Note`) VALUES ('2','2017-01-14 04:07:11pm','10','1','2','0','扣除购买[测试服务器]费用') [ RunTime:0.0000s ]
+SQL: UPDATE `pmplugin_user` SET `Money`=Money-10 WHERE ( uid = 2 ) [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE ( action = 11 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `pmplugin_costrecord` (`Number`,`Date`,`Anumber`,`State`,`UserUID`,`Type`,`Note`) VALUES ('1','2017-01-14 04:07:11pm','2','1','1','1','用户[admin]购买商品[测试服务器]手续费') [ RunTime:0.0010s ]
+SQL: UPDATE `pmplugin_user` SET `Money`=Money+1 WHERE ( uid = 1 ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `pmplugin_costrecord` (`Anumber`,`Date`,`Number`,`State`,`UserUID`,`Type`,`Note`) VALUES ('2','2017-01-14 04:07:11pm','9','1','2','1','用户[admin]购买您的服务器[测试服务器]。（已扣除手续费）') [ RunTime:0.0000s ]
+SQL: UPDATE `pmplugin_user` SET `Money`=Money+9 WHERE ( uid = 2 ) [ RunTime:0.0030s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = '14' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `pmplugin_shop` SET `Sales`=Sales+1 WHERE ( sid = '14' ) [ RunTime:0.0000s ]
+SQL: UPDATE `pmplugin_shop` SET `Num`='9' WHERE ( sid = 14 ) [ RunTime:0.0000s ]
+SQL: UPDATE `pmplugin_user` SET `HasShop`='[{\"sid\":\"14\",\"shopname\":\"\\u6d4b\\u8bd5\\u670d\\u52a1\\u5668\",\"username\":\"admin\",\"ip\":\"http:\\/\\/www.mctpa.net\\/\",\"port\":19132,\"ifuse\":\"0\",\"stop\":\"0\",\"serverid\":1,\"datelimit\":10000}]' WHERE ( uid = 2 ) [ RunTime:0.0000s ]
+
+[ 2017-01-14T16:07:19+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012001s ]
+SQL: SHOW COLUMNS FROM `pmplugin_message` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-14T16:07:19+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:07:20+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:07:23+08:00 ] 127.0.0.1 /User/bought.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_message` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-14T16:07:23+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-01-14T16:07:23+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:08:15+08:00 ] 127.0.0.1 /User/bought.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+SQL: SHOW COLUMNS FROM `pmplugin_message` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:08:15+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2017-01-14T16:08:15+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:08:26+08:00 ] 127.0.0.1 /Index/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0040s ]
+SQL: SELECT `UserName`,`ShopName`,`FindQQ`,`Version`,`Price`,`UpdateTime`,`Data`,`Sales`,`SID`,`Thumburl`,`Action`,`PlayerSolt`,`CPlayerSolt`,`MemaryLimit`,`DateLimit`,`Num`,`Content` FROM pmplugin_shop s INNER JOIN pmplugin_user ON s.UID = pmplugin_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,SID desc LIMIT 0,25   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_shop` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:08:26+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-01-14T16:08:26+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:08:37+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 415 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.019002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.027002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007000s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 149 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 150 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 152 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 158 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 161 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 167 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 170 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 176 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 179 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 185 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-14T16:08:37+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-01-14T16:08:38+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:09:14+08:00 ] 127.0.0.1 /User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013001s ]
+SQL: SHOW COLUMNS FROM `pmplugin_message` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-14T16:09:15+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:09:15+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:09:18+08:00 ] 127.0.0.1 /User/bought.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+SQL: SHOW COLUMNS FROM `pmplugin_message` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-14T16:09:18+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-01-14T16:09:18+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:12:18+08:00 ] 127.0.0.1 /User/bought.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0040s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_message` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:12:19+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-14T16:12:19+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:12:21+08:00 ] 127.0.0.1 /Shop.html14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Shop.html14
+
+[ 2017-01-14T16:12:54+08:00 ] 127.0.0.1 /User/bought.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_message` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:12:54+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:12:55+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:12:57+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 415 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007001s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 149 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 150 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 152 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 158 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 161 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 167 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 170 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 176 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 179 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 185 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:12:58+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:14:29+08:00 ] 127.0.0.1 /User/bought.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012001s ]
+SQL: SHOW COLUMNS FROM `pmplugin_message` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:14:29+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-01-14T16:14:30+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:15:13+08:00 ] 127.0.0.1 /User/bought.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017001s ]
+SQL: SHOW COLUMNS FROM `pmplugin_message` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-14T16:15:13+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:22:11+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 415 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.021001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006001s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 149 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 150 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 152 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 158 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 161 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 167 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 170 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 176 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 179 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 185 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 188 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:22:11+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:25:37+08:00 ] 127.0.0.1 /User/bought.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014001s ]
+SQL: SHOW COLUMNS FROM `pmplugin_message` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_message` WHERE ( receiveuid = '2' AND state='0' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:25:37+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:25:39+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 415 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-01-14T16:27:33+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 415 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0040s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.021001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006000s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 154 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 155 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 157 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 163 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 164 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 166 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 172 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 173 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 175 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 181 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 182 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 184 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 190 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 191 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:27:34+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:29:26+08:00 ] 127.0.0.1 /Public/css/fancybox_overlay.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:29:26+08:00 ] 127.0.0.1 /Public/css/fancybox_sprite.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:30:48+08:00 ] 127.0.0.1 /Shop/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_comment` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' and parentcomid=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `level` FROM `pmplugin_comment` WHERE ( shopid = '14' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `pmplugin_shop` WHERE ( sid = 14 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: filefid D:\phpStudy\WWW\Index\Index\Controller\ShopController.class.php 第 34 行.
+SQL: SELECT `HasShop` FROM `pmplugin_user` WHERE ( UserName = 'admin' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UID`,`Action`,`UserState`,`IfLock`,`UserName`,`PassWord`,`Money`,`Email`,`Data`,`LastLoginTime`,`registerdate` FROM `pmplugin_user` WHERE ( uid = 2 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: catalog D:\phpStudy\WWW\Index\Common\Common\function.php 第 415 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0060s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( useruid = '2' AND shopid = '14' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_comment` WHERE ( shopid = '14' ) LIMIT 0,30   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.022001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007000s ]
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 159 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 160 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 162 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 168 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 169 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 171 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 177 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 178 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 180 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 186 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 187 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 189 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 195 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 196 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\Index\Runtime\Cache\Index\e7dbd913f65bac57a7678a6be0990d49.php 第 198 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-14T16:30:48+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:30:48+08:00 ] 127.0.0.1 /Public/js/toastr.js.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-01-14T16:31:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `pmplugin_user` WHERE `UserName` = 'admin' AND `UID` = 2  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `pmplugin_shop` [ RunTime:0.0060s ]
+SQL: SELECT `UserName`,`ShopName`,`FindQQ`,`Version`,`Price`,`UpdateTime`,`Data`,`Sales`,`SID`,`Thumburl`,`Action`,`PlayerSolt`,`CPlayerSolt`,`MemaryLimit`,`DateLimit`,`Num`,`Content` FROM pmplugin_shop s INNER JOIN pmplugin_user ON s.UID = pmplugin_user.UID  WHERE ( PluginState ='1' AND Num >0 ) ORDER BY UpdateTime desc,SID desc LIMIT 0,25   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pmplugin_shop` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `pmplugin_option` [ RunTime:0.0050s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Slide' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `Action` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `UserState` FROM `pmplugin_user` WHERE ( UID = '2' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'header_notice' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Value` FROM `pmplugin_option` WHERE ( Name = 'Widget' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\Index\Index\Widget\ToolWidget.class.php 第 47 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-01-14T16:31:41+08:00 ] 127.0.0.1 /Tools/js.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

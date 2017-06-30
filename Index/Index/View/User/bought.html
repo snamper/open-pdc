@@ -1,0 +1,129 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--用户中心左侧菜单-->
+    {:W('Menu/User')}
+    <!--菜单结束-->
+    <!--中心模块开始-->
+    <div class="uk-width-large-8-10 ">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title">{$ActionTitle}</h3>
+            <hr class="uk-article-divider">
+            <!--<div class="uk-alert "><span class="uk-h2">注意：更改ip后一日之内无法再次更改！使用方法详细请见 <a target="_blank" href="http://help.18tilab.com/posts/view/62984/" class="uk-button uk-button-success">用户指南</a>客户端请加群下载：<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=3d0375023b89ec40dfc528cd69871d67e0cab9e1c38a432bd25c5e0505338bf8"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="PmPlugin交流群" title="PmPlugin交流群"></a></span></div>-->
+            <table class="uk-table uk-table-striped uk-table-hover uk-form">
+                <thead>
+                <tr>
+                    <th width="15%">服务器名称</th>
+                    <th width="20%">管理网址（点击进入）</th>
+                    <th width="15%">端口</th>
+					<th width="15%">用户名</th>
+                    <th width="20%">操作</th>
+                </tr>
+                </thead>
+                <tbody style="background-color: #fff;" class="boughtData">
+                <foreach name="list" item="Shop" >
+                    <tr data-shop-id="{$key}">
+                        <td style="line-height: 27px;">{$Shop.shopname}
+                            <php>
+                                if(isset($Shop['stop']) AND $Shop['stop'] == '1'){
+                                echo '[已停用]';
+                                }
+                            </php>
+                        </td>
+                        <td style="line-height: 27px;" class="shop-ip" onclick="window.open('{$Shop.ip}')"><div class="uk-badge">{$Shop.ip}</div></td>
+                        <td style="line-height: 27px;" class="shop-port"><div class="uk-badge uk-badge-warning">{$Shop.port}</div></td>
+						<td style="line-height: 27px;" class="shop-username"><div class="uk-badge uk-badge-warning">{$Shop.username}</div></td>
+                        <td ><div class="uk-button-group">
+						<button class="uk-button uk-button-success cusername" id="cusername"> 更改用户名 </button>
+						<button class="uk-button uk-button-success submit_username" id="submit_username" style="display:none;"> 确定 </button>
+                            <div class="uk-button-dropdown" data-uk-dropdown>
+                                <!-- 拨动下拉菜单的按钮 -->
+                                <button class="uk-button uk-button-danger"><i class="uk-icon uk-icon-bars"></i> 更多 <i class="uk-icon-caret-down"></i></button>
+                                <!-- 下拉菜单 -->
+                                <div class="uk-dropdown uk-dropdown-small">
+                                    <ul class="uk-nav uk-nav-dropdown">
+										<li><a target="_blank" href="<?php echo U('/Shop/'.$Shop['sid']);?>" >
+                                            <i class="uk-icon uk-icon-tags"></i> 查看商品详情</a></li>
+                                        <li>
+                                        <li><a target="_blank" href="{:U('/Sendmessage/complaint',array('sid'=>$Shop['sid']))}" >
+                                            <i class="uk-icon uk-icon-envelope-o"></i> 投诉服务器</a></li>
+                                        <li><php>
+                                            if(isset($Shop['comment']) AND $Shop['comment'] == 1){
+                                            echo '<a target="_blank"
+                                                     style="background-color: #fafafa;color: #999;border-color: rgba(0,0,0,.06);box-shadow: none;text-shadow: 0 1px 0 #fff;cursor: default;"
+                                                     href="javascript:void (0)">
+                                            <i class="uk-icon uk-icon-comment"></i> 已经评论了</a>';
+                                            }else{
+                                            echo '<a target="_blank"  href='.U('/Shop/'.$Shop['sid'].'#send-comment').' >
+                                            <i class="uk-icon uk-icon-comment-o"></i> 评论</a>';
+                                            }
+                                        </php></li><!--
+                                        <li class="uk-nav-divider"></li>
+                                        <li>
+                                            <php>
+                                                if(isset($Shop['stop']) AND $Shop['stop'] == '1'){
+                                                echo '<a href="'.U('/User/Stopplugin',array('id'=>$key,'do'=>'start')).'">
+                                                <i class="uk-icon uk-icon-toggle-off"></i> 启用服务器</a>';
+
+                                                }else{
+                                                echo '<a href="'.U('/User/Stopplugin',array('id'=>$key,'do'=>'stop')).'">
+                                                <i class="uk-icon uk-icon-toggle-on"></i> 停用服务器</a>';
+                                                }
+                                            </php>
+                                        </li>-->
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        </td>
+                    </tr>
+                </foreach>
+                </tbody>
+                <!--头部部分-->
+            </table>
+            {$page}
+        </div>
+    </div>
+    <!--中心模块结束-->
+</div>
+<script src="/Public/js/components/notify.min.js"></script>
+<script language="javascript">
+    $('.uk-table').on("click",".cusername",function(){
+				$(this).parent().find('.cusername').hide();
+				$(this).parent().find('.submit_username').show();
+                var Div = $(this).parent().parent().parent();
+                Username = Div.find('.shop-username').text();
+                Div.find('.shop-username').html("<input type='text' class='shop-username-input' value="+Username+">");
+				var submit_username = $(this).parent().find('.submit_username');
+				var cusername_button = $(this);
+            }
+    ).on("click",".submit_username",function(){
+        var Div = $(this).parent().parent().parent();
+        username = Div.find('.shop-username-input').val();
+        if(username == ''){
+            umessage('<i class="uk-icon-refresh uk-icon-circle" style="color: #ff0d00 ;"></i> 用户名不能为空',{status:'info',timeout:1000});
+            return;
+        }
+        if(username == Username){
+            umessage('<i class="uk-icon-refresh uk-icon-circle" style="color: #04ff70 ;"></i> 无改动',{status:'info',timeout:1000});
+            Div.find('.shop-username').html('<div class="uk-badge">'+username+'</div>');
+            $(this).parent().find('.submit_username').hide();
+			$(this).parent().find('.cusername').show();
+            return;
+        }
+        SID = $(this).attr('data-shop-sindex');
+        $.get('/User/CUserName',{'chance':SID,'username':username,'port':Div.find('.shop-port').text()},function(data){
+            if(data['state'] == '1'){
+                umessage('<i class="uk-icon-refresh uk-icon-circle" style="color: #04ff70 ;"></i> 更改成功',{status:'info',timeout:1000});
+                Div.find('.shop-username').html('<div class="uk-badge">'+username+'</div>');
+				$(this).parent().find('.submit_username').hide();
+				$(this).parent().find('.cusername').show();
+                return true;
+            }else{
+                umessage('<i class="uk-icon-refresh uk-icon-circle" style="color: #ff0d00 ;"></i> '+data['info'],{status:'info',timeout:1000});
+				console.log(data['info']);
+                return true;
+            }
+        })
+    })
+</script>

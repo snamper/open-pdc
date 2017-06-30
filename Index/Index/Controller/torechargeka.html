@@ -1,0 +1,248 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--用户中心左侧菜单-->
+    {:W('Menu/User')}
+    <!--菜单结束-->
+    <!--中心模块开始-->
+    <div class="uk-width-large-8-10">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title">{$ActionTitle}</h3>
+            <div class="uk-alert "><span class="uk-h2">注意：点卡充值会有一定的折算比例，请注意。</span></div>
+            <hr class="uk-article-divider">
+            <form method="post" id="edit-profile" class="uk-form uk-form-horizontal" onsubmit="return CheckPayData()" action="{:U('Orderka/pay')}">
+                    <div class="uk-form-row">
+                        <label class="uk-form-label" for="paylist"><b>充值卡类型</b></label>
+                        <div class="col-sm-10">
+                            <style>
+                                ul {
+                                    list-style: none;
+                                    padding-left: 0px;
+                                }
+                                .paylist li {
+                                    font-weight: bold;
+                                    width: 200px;
+                                    float: left;
+                                    border: 1px solid #fff;
+                                    text-align: center;
+                                    padding: 8px 0;
+                                }
+                                .paylist li:hover {
+                                    border: 1px solid #1eb3c6;
+                                    border-radius: 4px;
+                                    transition: all 0.3s linear;
+                                    -moz-transition: all 0.3s linear;
+                                    -webkit-transition: all 0.3s linear;
+                                }
+                                .cursor {
+                                    cursor: pointer;
+                                }
+                                .paylist .sl {
+                                    border: 1px solid #006baa;
+                                    border-radius: 4px;
+                                    transition: all 0.3s linear;
+                                    -moz-transition: all 0.3s linear;
+                                    -webkit-transition: all 0.3s linear;
+                                }
+                            </style>
+                            <div class="paylist uk-form-controls" id="paylist" style="padding-left: 0px;">
+
+                                <div id="cards" style="display:block">
+                                    <ul style="margin-bottom: 0px;">
+                                        <label for="10">
+                                        <li class="cursor">
+                                            <input type="radio" name="ctype" value="10" id="10">
+                                            <img src="/Public/img/cards/3.jpg" align="absmiddle" alt="电信全国卡">电信全国卡</li>
+                                        </label>
+                                        <label for="3">
+                                            <li class="cursor">
+                                                <input type="radio" name="ctype" value="3" id="3">
+                                                <img src="/Public/img/cards/4.jpg" align="absmiddle" alt="骏网一卡通">骏网一卡通</li>
+                                        </label>
+                                        <label for="2">
+                                            <li class="cursor">
+                                                <input type="radio" name="ctype" value="2" id="2">
+                                                <img src="/Public/img/cards/5.jpg" align="absmiddle" alt="盛大一卡通">盛大一卡通</li>
+                                        </label>
+                                        <label for="4">
+                                            <li class="cursor">
+                                                <input type="radio" name="ctype" value="4" id="4">
+                                                <img src="/Public/img/cards/6.jpg" align="absmiddle" alt="完美一卡通">完美一卡通</li>
+                                        </label>
+                                        <label for="6">
+                                            <li class="cursor">
+                                                <input type="radio" name="ctype" value="6" id="6">
+                                                <img src="/Public/img/cards/7.jpg" align="absmiddle" alt="搜狐一卡通">搜狐一卡通</li>
+                                        </label>
+                                        <label for="7">
+                                            <li class="cursor">
+                                                <input type="radio" name="ctype" value="7" id="7">
+                                                <img src="/Public/img/cards/8.jpg" align="absmiddle" alt="征途一卡通">征途一卡通</li>
+                                        </label>
+                                        <label for="9">
+                                            <li class="cursor">
+                                                <input type="radio" name="ctype" value="9" id="9">
+                                                <img src="/Public/img/cards/9.jpg" align="absmiddle" alt="网易一卡通">网易一卡通</li>
+                                        </label>
+                                        <label for="1">
+                                            <li class="cursor">
+                                                <input type="radio" name="ctype" value="1" id="1">
+                                                <img src="/Public/img/cards/10.jpg" align="absmiddle" alt="腾讯Q币卡">腾讯Q币卡</li>
+                                        </label>
+                                        <label for="8">
+                                            <li class="cursor">
+                                                <input type="radio" name="ctype" value="8" id="8">
+                                                <img src="/Public/img/cards/11.jpg" align="absmiddle" alt="久游一卡通">久游一卡通</li>
+                                        </label>
+                                        <label for="15">
+                                            <li class="cursor">
+                                                <input type="radio" name="ctype" value="15" id="15">
+                                                <img src="/Public/img/cards/12.jpg" align="absmiddle" alt="光宇一卡通">光宇一卡通</li>
+                                        </label>
+                                        <label for="14">
+                                            <li class="cursor">
+                                                <input type="radio" name="ctype" value="14" id="14">
+                                                <img src="/Public/img/cards/14.jpg" align="absmiddle" alt="天下一卡通">天下一卡通</li>
+                                        </label>
+                                        <label for="5">
+                                            <li class="cursor">
+                                                <input type="radio" name="ctype" value="5" id="5">
+                                                <img src="/Public/img/cards/15.jpg" align="absmiddle" alt="天宏一卡通">天宏一卡通</li>
+                                        </label>
+
+                                    </ul>
+                                    <div style="clear: both">
+                                    </div>
+                                    <div>
+                                        <strong>提示：</strong>请根据你的实际情况选择最佳的方式进行购买支付! <strong>本系统目前支持最大卡面额为100</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-form-row">
+                        <label class="uk-form-label" for="paylist"><b>充值卡卡号</b></label>
+
+                        <div class="uk-form-controls">
+                            <input type="text" class="uk-form-large uk-width-1-1" id="cnum" placeholder="输入你的充值卡卡号或充值卡序列号" name="cnum">
+                        </div>
+                        <span class="help-block col-sm-4" id="num"></span>
+                    </div>
+                    <div class="uk-form-row">
+                        <label class="uk-form-label" for="paylist"><b>充值卡密码</b></label>
+
+                        <div class="uk-form-controls">
+                            <input type="text" class="uk-form-large uk-width-1-1" id="cpassword" placeholder="输入你的充值卡密码" name="cpwd">
+                        </div>
+                        <span class="help-block col-sm-4" id="pwd"></span>
+                    </div>
+
+
+                    <div class="uk-form-row">
+                        <label class="uk-form-label" for="paylist"><b>充值卡面额</b></label>
+
+                        <div class="uk-form-controls">
+                            <div class="uk-button-group" data-uk-button-radio>
+                                <a class="uk-button uk-button-large uk-button-primary" onclick="setMoney(10)">10元</a>
+                                <a class="uk-button uk-button-large uk-button-primary" onclick="setMoney(30)">30元</a>
+                                <a class="uk-button uk-button-large uk-button-primary" onclick="setMoney(50)">50元</a>
+                                <a class="uk-button uk-button-large uk-button-primary" onclick="setMoney(100)">100元</a>
+                            </div>
+                            <input type="hidden" name="money" value="0" id="money">
+                        </div>
+                    </div>
+
+                <h2>备注：</h2>
+                <table align="center" class="uk-table">
+                    <thead>
+                    <tr>
+                        <td><strong>支付类型</strong></td>
+                        <td><strong>费率</strong></td>
+                        <td><strong>支付类型</strong></td>
+                        <td><strong>费率</strong></td>
+                        <td><strong>支付类型</strong></td>
+                        <td><strong>费率</strong></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr style="background: rgb(255, 255, 255);"><td>骏网一卡通</td>
+                        <td>.855</td>
+                        <td>盛大一卡通</td>
+                        <td>.87</td>
+                        <td>天宏一卡通</td>
+                        <td>.855</td>
+                    </tr><tr style="background: rgb(255, 255, 255);"><td>QQ币充值卡</td>
+                        <td>.885</td>
+                        <td>网易一卡通</td>
+                        <td>.88</td>
+                        <td>光宇一卡通</td>
+                        <td>.84</td>
+                    </tr><tr style="background: rgb(255, 255, 255);"><td>完美一卡通</td>
+                        <td>.89</td>
+                        <td>搜狐一卡通</td>
+                        <td>.855</td>
+                        <td>电信充值卡</td>
+                        <td>.96</td>
+                    </tr><tr style="background: rgb(255, 255, 255);"><td>天下一卡通</td>
+                        <td>.855</td>
+                        <td>征途游戏卡</td>
+                        <td>.885</td>
+                        <td>久游一卡通</td>
+                        <td>.85</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br>
+
+                    <div class="uk-form-row uk-float-right">
+                        <div class="uk-button-group">
+                            <button type="submit" class="uk-button  uk-button-primary" id="sss" onclick="return CheckPayData()">立即提交</button>
+                            <button class="uk-button  uk-button-danger" type="reset">重新填写</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <!--中心模块结束-->
+</div>
+<script type="application/javascript" language="JavaScript">
+    function setMoney(num){
+        $('#money').val(num);
+    }
+    function CheckPayData(){
+        if($('#cnum').val() == ''){
+            alert('请输入卡号');
+            return false;
+        }
+        if($('#cpassword').val() == ''){
+            alert('请输入卡密');
+            return false;
+        }
+        var list= $('input:radio[name="ctype"]:checked').val();
+        if(list == null){
+            alert('请选择卡类型');
+            return false;
+        }
+        if($('#money').val() == 0){
+            alert('请选择金额');
+            return false;
+        }
+        return true;
+    }
+</script>
+<script src="/Public/js/components/notify.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#form-h-it").blur(function(){
+            num = $(this).val();
+            num = Math.round(num);
+            if(num >= 1){
+                $(this).val(num);
+                num2 = (((1-0.015)*num).toFixed(2));
+                $('.last-recharge-num').text(num2);
+                $('.last-recharge-text').removeClass('uk-hidden');
+            }
+        });
+    });
+</script>

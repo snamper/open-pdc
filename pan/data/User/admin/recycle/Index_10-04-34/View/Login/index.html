@@ -1,0 +1,179 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-panel uk-panel-box uk-panel-box-secondary uk-margin-large-top">
+    <div data-uk-grid-margin="" class="uk-grid uk-grid-divider">
+        <div class="uk-width-medium-1-2 uk-container-center">
+            <div class="uk-grid">
+                <div class="uk-width-1-5 uk-hidden-small uk-width-medium-1-5"></div>
+                <div class="uk-width-large-3-5 uk-width-medium-3-5 uk-width-small-1-1">
+                    <div class="uk-panel">
+                        <div class="b35"></div>
+                        <h1 class="list_cat">
+                            <a class="b" href=""><i class="uk-icon-user mb-a"></i> 用户登录</a>
+                        </h1>
+                        <form action="{:U('/Login/ToLogin')}" method="post" class="uk-form" id="Dform">
+                            <div class="uk-form-row">
+                                <div class="uk-form-icon uk-width-1-1">
+                                    <i class="uk-icon-user"></i>
+                                    <input type="text" placeholder="请输入账号" value="" id="username" name="UserName" class="uk-width-1-1 uk-form-width-large uk-form-large" maxlength="20">
+                                </div>
+                            </div>
+                            <div class="uk-form-row">
+                                <div class="uk-form-icon uk-form-password uk-width-1-1">
+                                    <i class="uk-icon-lock"></i>
+                                    <input type="password" placeholder="请输入密码" value="" id="password" name="PassWord" class="uk-width-1-1 uk-form-width-large uk-form-large" maxlength="20">
+                                </div>
+                            </div>
+                            <!--<br>
+                            验证码：<br>请输入MC技术联盟的英文缩写（大写英文字母4个）
+                            <div class="uk-form-row">
+                                <div class="uk-form-icon uk-width-1-1">
+									<input type="text" placeholder="请输入验证码" value="" id="verify" name="Verify" class="uk-width-1-1 uk-form-width-large uk-form-large" maxlength="20"><br>
+	                                </div>
+                            </div>-->
+                            <div class="uk-form-row">
+                                <div class="verify" id="verify"></div>
+                            </div>
+                            <div class="uk-form-row">
+                                <button class="uk-button btn-primary uk-width-medium-1-1 uk-width-large-1-1 uk-width-small-1-2 uk-button-large" name="submit" type="submit" id="dologin">立 即 登 录</button>
+                            </div>
+                            <div class="uk-form-row uk-text-small uk-margin-small-top">
+                                <label title="" class="uk-float-left">
+								<div class="switch">
+									<input type="checkbox" id="cookietime" value="1" name="cookietime"> 
+								</div>
+								保持登录7天（公共电脑慎用）
+								</label>
+                                <a href="{:U('Cpasswd/findpassword')}" class="uk-float-right uk-link uk-link-muted">忘记密码?</a>
+                            </div>
+                            <div class="b20"></div>
+                            <div class="b35"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="uk-width-1-5 uk-hidden-small"></div>
+            </div>
+        </div>
+		<script>
+			$('#dologin').click(function(e){
+				e.preventDefault();
+    			if(!InputCheck('#Dform')){
+    					message('error','错误：','请完整填写信息');
+    					$("#veritybutton").removeAttr('disabled');
+    					$("#veritybutton").text("立 即 注 册");
+    			} else {
+    				$.ajax({
+    					url: "{:U('/Login/ToLogin')}",
+    					async: true,
+    					type: 'POST',
+    					dataType: 'json',
+    					data: $("#Dform").serialize(),
+    					beforeSend: function(){
+    						$("#dologin").attr({"disabled":"disabled"});
+    						$("#dologin").text("正在登录……");
+    					},
+    					success: function(data){
+    						console.log(data);
+    						if(data.status == 1){
+    							message('error', '错误', data.message);
+    							$("#dologin").removeAttr("disabled").text("重 新 登 录");
+    						} else if(data.status == 0){
+    							message('success', '成功', data.message);
+    							setTimeout(function(){
+    								window.location.href = "{:U('/User/')}";
+    							}, 5000);
+    						}
+    					},
+    				});
+    			}
+			});
+		</script>
+        <div class="uk-width-medium-1-2 uk-container-center">
+            <div class="uk-grid">
+                <div class="uk-width-1-6 uk-hidden-small uk-width-medium-1-6"></div>
+                <div class="uk-width-large-4-6 uk-width-medium-4-6 uk-width-small-1-1">
+                    <div class="uk-panel">
+                        <div class="b35"></div>
+                        <h1 class="uk-text-center">
+                            立即注册
+                        </h1>
+                        <form id="register-form" class="uk-form " href="{:U('/Login/ToRegister')}" method="POST" >
+                                <div class="uk-form-row">
+                                    <div class="uk-form-icon">
+                                        <i id="dusername" class="uk-icon-user"></i>
+                                        <input type="text" placeholder="请输入账号" autocomplete="off"  id="username" name="UserName" class="uk-form-width-large uk-form-large" title="" maxlength="20" >
+                                    </div>
+                                </div>
+                                <div class="uk-form-row parentCls">
+                                    <div class="uk-form-icon">
+                                        <i id="demail" class="uk-icon-envelope"></i>
+                                        <input type="text" placeholder="请输入邮箱" autocomplete="off"  id="email" name="Email" class="uk-form-width-large uk-form-large inputElem" title="">
+                                    </div>
+                                </div>
+                                <div class="uk-form-row">
+                                    <div class="uk-form-icon uk-form-password">
+                                        <i id="dpassword" class="uk-icon-lock"></i>
+                                        <input type="password" placeholder="请输入密码" value="" autocomplete="off"  id="password" name="PassWord" class="uk-form-width-large uk-form-large" title="" maxlength="30">
+                                    </div>
+                                </div>
+                                <div class="uk-form-row">
+                                    <div class="uk-form-icon uk-form-password">
+                                        <i id="dcpassword" class="uk-icon-unlock-alt"></i>
+                                        <input type="password" placeholder="请再次输入密码" value="" autocomplete="off"  id="cpassword" name="CPassWord" class="uk-form-width-large uk-form-large" title="" maxlength="30">
+                                    </div>
+                                </div>
+                                <div class="uk-form-row">
+                                    <button id="veritybutton" class="uk-button  btn-primary uk-width-medium-1-1 uk-width-large-1-1 uk-width-small-1-2 uk-button-large" name="submit">立 即 注 册</button>
+                                </div>
+                                <script language="JavaScript">
+							    $('#veritybutton').click(function(e){
+							        e.preventDefault();
+    								$("#veritybutton").attr({"disabled":"disabled"});
+    								$("#veritybutton").text("正在注册……");
+    								if(!InputCheck('#register-form')){
+    									message('error','错误：','请完整填写信息');
+    									$("#veritybutton").removeAttr('disabled');
+    									$("#veritybutton").text("立 即 注 册");
+    									$('input.uk-form-danger').keyup(function(){
+    					                    $(this).removeClass('uk-form-danger');
+    					                });
+    								} else {
+    									var AjaxData;
+    									AjaxData = $("#register-form").serialize();
+    									console.log(AjaxData);
+    									$.ajax({
+    										url: "{:U('/Login/ToRegister')}",
+    										async:true,
+    										type: 'POST',
+    										dataType:'json',
+    										data:AjaxData,
+    										error:function(e){
+    											message('error','错误',"未知原因失败");
+    											$("#veritybutton").removeAttr('disabled');
+    											$("#veritybutton").text("立 即 注 册");
+    											console.log(e);
+    										},
+    										success:function(data){
+    											if(data!=true){
+    												message('error','错误',data.message);
+    												$("#veritybutton").removeAttr('disabled');
+    												$("#veritybutton").text("立 即 注 册");
+    											} else if(data==true){
+    												setTimeout(function(){
+    													window.location.href='{:U('/Login')}';
+    												}, 2000);
+    											}
+    										}
+    									});
+    								}
+							});
+							</script>
+                            </form>
+                    </div>
+                </div>
+                <div class="uk-width-1-6 uk-hidden-small uk-width-medium-1-6"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="http://cdn.bootcss.com/uikit/2.17.0/js/components/tooltip.min.js"></script>

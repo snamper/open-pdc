@@ -1,0 +1,55 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--用户中心左侧菜单-->
+    {:W('Menu/Developer')}
+    <!--菜单结束-->
+    <!--中心模块开始-->
+    <div class="uk-width-large-8-10">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title">{$ActionTitle}</h3>
+            <hr class="uk-article-divider" />
+            <div class="uk-alert uk-alert-danger">发布插件请确保阅读帮助中的版主事项</div>
+			<div name="image" id="dropbox" style="min-width:300px;min-height:100px;border:3px dashed silver;"><br />
+				<form method="post" class="form-horizontal" enctype="multipart/form-data" id="uploadform" onsubmit="return false;">
+					<div class="form-inline">
+						<input id="lefile" type="file" name="file" style="display:none" multiple="multiple" />
+						&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-primary" id="addfile"><i class="fa fa-plus"></i> | 添加插件</a> 
+						<label>或拖动插件到此处上传</label>
+					</div>
+					<br />
+					<br />
+				</form>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<td>#</td>
+							<td>文件名</td>
+							<td style="width:30%">进度</td>
+							<td>状态</td>
+						</tr>
+					</thead>
+					<tbody id="filelist">
+						<tr id="file1" style="display:none">
+							<td id="id">1</td>
+							<td id="filename">文件名</td>
+							<td id="progress">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%" id="progressbar">
+										<span class="sr-only"></span>
+									</div>
+								</div>
+							</td>
+							<td id="status"><p class="bg-info">上传中……</p></td>
+						</tr>
+					</tbody>
+					<script type="text/javascript" src="js/main.js"></script>
+				</table>
+				<br />
+			</div>
+        </div>
+    </div>
+    <!--中心模块结束-->
+    <script>
+	CKEDITOR.replace('editor');
+    </script>
+</div>

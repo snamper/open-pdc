@@ -1,0 +1,131 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--中心模块开始-->
+    <div class="uk-width-1-1">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title">{$ActionTitle}</h3>
+            <hr class="uk-article-divider">
+            <form action="{:U('/Checker/changedata')}" method="post" class="uk-form uk-width-large-1-1 uk-grid" id="PluginData">
+                <div class="uk-width-large-2-3">
+                    <div class="uk-panel ">
+                        <h2>服务器名称：</h2>
+                        <div class="uk-form-row">
+                            <input name="ShopName" type="text" value="{$CheckShop['shopname']}" placeholder="名称" class="uk-width-large-1-1 uk-form-large">
+                        </div>
+                        <br>
+                        <div><script id="container" name="Content" type="text/plain">
+                        </script></div>
+                    </div>
+                    <!--左侧第一面板结束-->
+                </div>
+                <!--左侧结束-->
+                <div class="uk-width-large-1-3">
+                    <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                        <div class="uk-panel-title">定价：</div>
+                        <div class="uk-form-row uk-form-icon">
+                            <i class="uk-icon-money"></i><input name="Price" type="text" placeholder="价格" value="{$CheckShop['price']}" class="uk-width-large-9-10">
+                        </div>
+                    </div>
+                    <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                        <div class="uk-panel-title">PM版本：</div>
+                        <div class="uk-form-row">
+                            {$versionData}
+                        </div></div>
+                    <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                        <div class="uk-panel-title">标签：<br><small>(多个标签请用英文逗号 , 间隔)</small></div>
+                        <div class="uk-form-row">
+                            <input name="TAGS" type="text" placeholder="标签" value="{$TAGS}" class="uk-width-large-1-1">
+                        </div></div>
+                    <div class="uk-panel uk-panel-box uk-panel-box-secondary ">
+                        <div class="uk-panel-title">分类目录：</div>
+                        <div class="uk-form-row" style="padding: 5px;background-color: #f5f5f5;border: 1px solid #dfdfdf;overflow: auto;min-height: 42px;    max-height: 200px;">
+                            {$CatalogData}
+                        </div></div>
+                    <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                        <div class="uk-panel-title">联系QQ：</div>
+                        <div class="uk-form-row uk-form-icon">
+                            <i class="uk-icon-money"></i><input name="QQ" type="text" placeholder="QQ" value="{$CheckShop['findqq']}" class="uk-width-large-9-10">
+                        </div>
+                    </div>
+                    <input id='stime' name="stime" type="hidden" value="{$CheckShop['sid']}" />
+                    <textarea id="DataStore" rows="0" cols="0" style="display: none">{$CheckShop['content']}</textarea>
+                    <div class="uk-margin-top">
+                        <button id="SendPlugin" class="uk-button uk-button-large uk-button-primary uk-width-1-1" type="submit">发布！</button>
+                    </div>
+                    <!--右侧面板结束-->
+                </div>
+                <!--右侧结束-->
+            </form>
+            <!-- 模态对话框 -->
+        </div>
+    </div>
+    <!--中心模块结束-->
+    <!--<js href="__PUBLIC__/js/jquery-2.0.2.js" />-->
+    <js href="__PUBLIC__/ueditor/ueditor.config.js" />
+    <js href="__PUBLIC__/ueditor/ueditor.all.min.js" />
+    <script>
+        $(function(){
+            var ue = UE.getEditor('container',{
+                serverUrl :'{:U("Index/Developer/ueditor")}',
+                imageManagerListPath:'/image/{$UserData.UID}/',
+                initialFrameHeight:600,
+                autoClearinitialContent:true,
+                toolbars: [
+                    [
+                        'undo', //撤销
+                        'redo', //重做
+                        'bold', //加粗
+                        'indent', //首行缩进
+                        'italic', //斜体
+                        'underline', //下划线
+                        'strikethrough', //删除线
+                        'source', //源代码
+                        'blockquote', //引用
+                        'pasteplain', //纯文本粘贴模式
+                        'selectall', //全选
+                        'print', //打印
+                        'preview', //预览
+                        'horizontal', //分隔线
+                        'removeformat', //清除格式
+                        'unlink', //取消链接
+                        'insertcode', //代码语言
+                        'fontfamily', //字体
+                        'fontsize', //字号
+                        'paragraph', //段落格式
+                        'insertimage', //多图上传
+                        'link', //超链接
+                        'emotion', //表情
+                        'spechars', //特殊字符
+                        'searchreplace', //查询替换
+                        'justifyleft', //居左对齐
+                        'justifyright', //居右对齐
+                        'justifycenter', //居中对齐
+                        'justifyjustify', //两端对齐
+                        'forecolor', //字体颜色
+                        'backcolor', //背景色
+                        'insertorderedlist', //有序列表
+                        'insertunorderedlist', //无序列表
+                        'fullscreen', //全屏
+                        'directionalityltr', //从左向右输入
+                        'directionalityrtl', //从右向左输入
+                        'rowspacingtop', //段前距
+                        'rowspacingbottom', //段后距
+                        'imagenone', //默认
+                        'imageleft', //左浮动
+                        'imageright', //右浮动
+                        'imagecenter', //居中
+                        'lineheight', //行间距
+                        'edittip ', //编辑提示
+                        'customstyle', //自定义标题
+                        'autotypeset', //自动排版
+                        'drafts', // 从草稿箱加载
+                    ]
+                ],
+                focus:true
+        })
+            ue.ready(function() {
+                ue.setContent($('#DataStore').val())
+            });
+        })
+    </script>
+</div>

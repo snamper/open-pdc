@@ -1,0 +1,35 @@
+<layout name="adminhome" /><!--调用布局的模板-->
+<div class="clearfix page-title">
+    <h4><i class="icon-gear"></i>支付页面</h4>
+</div><br>
+<div class="row container "  style="margin: 0 auto;">
+    <div class="col-lg-12 ">
+        <section class="panel">
+            <header class="panel-heading">
+                信息:{$alipay['note']}
+            </header>
+        <form class="form-horizontal" accept-charset="GBK" target="_blank" method="POST" action="https://shenghuo.alipay.com/send/payment/fill.htm">
+            <input value="PmPlugin提款[MID:{$alipay['mid']}]" name="title" type="hidden">
+            <input value="PmPlugin提款-申请时间[{$alipay['date']}]|申请人UID:[{$alipay['useruid']}]" name="memo" type="hidden">
+            <input value="转账" name="pay" type="hidden">
+            <div class="form-group">
+                <label class="col-lg-3 control-label">支付宝账户或邮箱地址：</label>
+                <div class="col-lg-8">
+                    <input type="text" class="form-control" placeholder="邮箱或地址" name="optEmail">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-3 control-label">金额：</label>
+                <div class="col-lg-8">
+                    <input type="text" class="form-control" placeholder="金额" maxlength="5" value="{$alipay['number']}" name="payAmount">
+                </div>
+            </div>
+                <button class="btn btn-success float-right clear btn-lg col-lg-12" type="submit" >确定</button>
+        </form>
+            <br><br><br>
+
+        <a href="{$url}"><button class="btn btn-inverse" >确认支付完成</button></a>
+        </section>
+    </div>
+</div>
+<script src="/Public/js/admin/bootstrap.js"></script>

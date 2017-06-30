@@ -1,0 +1,60 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--用户中心左侧菜单-->
+    {:W('Menu/User')}
+    <!--菜单结束-->
+    <!--中心模块开始-->
+    <div class="uk-width-large-8-10 ">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title">{$ActionTitle}</h3>
+            <hr class="uk-article-divider">
+            <div class="uk-overflow-container">
+                <table class="uk-table uk-table-hover">
+                    <thead>
+                    <tr>
+                        <th class="uk-width-2-10">发送者</th>
+                        <th class="uk-width-4-10">标题（点击阅读）</th>
+                        <th class="uk-width-2-10">发送时间</th>
+                        <th class="uk-width-2-10 uk-text-right">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody class="messageAll">
+                    <foreach name="MessageData" item="Message">
+                    <tr data-sid-id="{$key}" data-mesid="{$Message['mesid']}">
+                        <td><div style="line-height: 30px"><span>{$Message['username']}</span>
+                            <if condition="$Message['state'] eq 0 ">
+                            <span class="uk-badge uk-badge-success uk-badge-notification" style="position: relative;top: -8px;right: -5px;">新</span>
+                            </if>
+                        </div></td>
+                        <td class="uk-width-4-10"><a href="{:U('User/MessageShow',array('id'=>$Message['mesid']));}" target="_blank" onclick="ShowMessage({$key})"><span class="uk-width-4-10" style="line-height:30px;">{$Message['content']['title']}</span></a></td>
+                        <td><span style="line-height: 30px">{$Message['date']}</span></td>
+                        <td class="uk-text-right">
+                            <a class="uk-button uk-button-danger" onclick="DelMessage({$Message['mesid']})" > 删 除 </a>
+                        </td>
+                    </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+            {$page}
+        </div>
+    </div>
+    <!--中心模块结束-->
+</div>
+<script language="JavaScript">
+    function ShowMessage(sid){
+        $("tr[data-sid-id="+sid+']').find('.uk-badge').remove();
+    }
+    function DelMessage(mesid){
+		if(confirm('你确定要删除当前消息？')){
+			$.get("{:U('User/MessageDel');}",{'mesid':mesid},function(data){
+				if(data['state'] == 1) {
+					$("tr[data-mesid=" + mesid + ']').css("background-color", "rgb(243, 190, 190)").fadeOut(300);
+				}else if(data['state'] == 0)
+				{
+					message('error', '错误', '删除失败！');
+				}
+			});
+		}
+    }
+</script>

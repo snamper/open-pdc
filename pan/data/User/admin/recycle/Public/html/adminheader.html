@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>[title]</title>
+    <link rel="stylesheet" href="/Public/css/admin/bootstrap.css">
+    <link rel="stylesheet" href="/Public/css/admin/font-awesome.min.css">
+    <link rel="stylesheet" href="/Public/css/admin/style.css">
+    <link rel="stylesheet" href="/Public/css/admin/plugin.css">
+    <script src="/Public/js/jquery.js"></script>
+    <script src="/Public/js/admin/app.v2.js"></script>
+</head>
+<body>
+<!--页面主体开始-->
+<!-- header -->
+<header id="header" class="navbar">
+    <ul class="nav navbar-nav navbar-avatar pull-right">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="thumb-small avatar inline"><img src="/Public/images/placeholder_avatar.svg" alt="chs" class="img-circle"></span>
+                <b class="caret hidden-sm-only"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">设置</a></li>
+                <li><a href="#">资料</a></li>
+                <li><a href="#"><span class="badge bg-danger pull-right">{$messageNum}</span>消息</a></li>
+                <li class="divider"></li>
+                <li><a href="docs.html">帮助</a></li>
+                <li><a href="signin.html">登出</a></li>
+            </ul>
+        </li>
+    </ul>
+    <a class="navbar-brand" href="#">后台</a>
+    <button data-target="body" data-toggle="class:slide-nav slide-nav-left" class="btn btn-link pull-left nav-toggle hidden-lg" type="button">
+        <i class="icon-reorder icon-xlarge text-default"></i>
+    </button>
+</form>
+</header>
+<!-- / header -->
+<!-- nav -->
+<nav id="nav" class="nav-primary visible-lg nav-vertical">
+    <ul class="nav affix-top" data-spy="affix" data-offset-top="50">
+        <li ><a href="{:U('/Admin/Index')}"><i class="icon-dashboard icon-xlarge"></i>控制版面</a></li>
+        <li ><a href="{:U('/Admin/Index/User')}"><i class="icon-user icon-xlarge"></i>用户管理</a></li>
+        <li class="dropdown-submenu">
+            <a href="{:U('/Admin/Index/Record')}"><i class="icon-list-alt icon-xlarge"></i>充值记录</a>
+            <!--<ul class="dropdown-menu">
+                <li><a href="buttons.html">Buttons</a></li>
+                <li><a href="icons.html"><b class="badge pull-right">302</b>Icons</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="widgets.html"><b class="badge bg-primary pull-right">8</b>Widgets</a></li>
+                <li><a href="components.html"><b class="badge pull-right">18</b>Components</a></li>
+            </ul>-->
+        </li>
+        <li><a href="{:U('/Admin/Index/Shop')}"><i class="icon-shopping-cart icon-xlarge"></i>商品列表</a></li>
+        <li><a href="{:U('/Admin/Index/Setting')}"><i class="icon-gear icon-xlarge"></i>全局控制</a></li>
+        <li class="dropdown-submenu">
+            <a href="#"><i class="icon-maxcdn icon-xlarge"></i>消息管理<b class="badge bg-danger pull-right">{$messageNum+$ATM}</b></a>
+            <ul class="dropdown-menu">
+                <li><a href="{:U('/Admin/Index/Massage')}"><b class="badge bg-danger pull-right">{$messageNum}</b> 站内消息</a></li>
+                <li><a href="{:U('/Admin/Index/Application')}"><b class="badge bg-danger pull-right">{$ATM}</b> 提现申请</a></li>
+                <li><a href="{:U('/Admin/Index/Complaint')}">反馈</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<!-- / nav -->

@@ -1,0 +1,45 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--用户中心左侧菜单-->
+    {:W('Menu/Developer')}
+    <!--菜单结束-->
+    <!--中心模块开始-->
+    <div class="uk-width-large-8-10">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title">{$ActionTitle}</h3>
+            <hr class="uk-article-divider">
+            <table class="uk-table uk-table-striped uk-table-hover ">
+                <thead>
+                <tr>
+                    <th>服务器名称</th>
+                    <th>审核状态</th>
+                    <th class="uk-text-right">购买量</th>
+                    <th class="uk-text-right">操作</th>
+                </tr>
+                </thead>
+                <tbody style="background-color: #fff;">
+                <foreach name="ShopData" item="Shop" >
+                    <tr>
+                        <td style="line-height: 27px;">{$Shop.shopname}<php>
+                            if($Shop['oldserver']!=='0'){
+                                echo '[更新后版本]';
+                            }
+                        </php></td>
+                        <td style="line-height: 27px;">{:getServerReview($Shop['sid']);}</td>
+                        <td class="uk-text-right"><div class="uk-badge">{$Shop.sales}</div></td>
+                        <td class="uk-text-right"><div class="uk-button-group">
+                            <a class="uk-button uk-button-success" href="__ROOT__/Developer/EditPlugin/SID/{$Shop.sid}">编辑</a>
+                            <a class="uk-button uk-button-danger" href="#">删除</a>
+                        </div>
+                        <!--TODO：这里的删除不是指删除这个商品，而是将这个服务器归为系统的服务器，并且不再出售-->
+                        </td>
+                    </tr>
+                </foreach>
+                </tbody>
+                <!--头部部分-->
+            </table>
+            {$page}
+        </div>
+    </div>
+    <!--中心模块结束-->
+</div>

@@ -1,0 +1,74 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--用户中心左侧菜单-->
+    {:W('Menu/User')}
+    <!--菜单结束-->
+    <!--中心模块开始-->
+    <div class="uk-width-large-8-10">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title uk-float-left">{$ActionTitle} (如果没到帐请去支付宝确认收货)</h3>
+            <div class="uk-float-right">
+                <a href="{:U('User/torecharge');}"><button class="uk-button uk-button-primary uk-button-large">我要充值！</button></a></div>
+            <hr class="uk-article-divider" style="clear: both;">
+            <table class="uk-table uk-table-striped uk-table-hover uk-form">
+                <thead>
+                <tr>
+                    <th width="8%" class="uk-text-center">交易ID</th>
+                    <th width="20%" class="uk-text-center">金额</th>
+                    <th width="20%">日期</th>
+                    <th width="20%">备注</th>
+                    <th width="10%">状态</th>
+                </tr>
+                </thead>
+                <tbody style="background-color: #fff;" class="boughtData">
+                <foreach name="list" item="record" >
+                    <tr>
+                        <td style="line-height: 27px;vertical-align: middle;" class="uk-text-center">{$record.aid}</td>
+                        <td style="line-height: 27px;vertical-align: middle;" class="uk-text-center"><button class="uk-button uk-button-success">{$record.price}</button></td>
+                        <td style="line-height: 27px;vertical-align: middle;" >{$record.adddate}</td>
+                        <td style="line-height: 27px;vertical-align: middle;" >{$record.title}</td>
+                        <td style="line-height: 27px;vertical-align: middle;" >
+                            <php>
+                                if($record['kadata']=='0'){
+                                switch($record['state']){
+                                case '1';
+                                echo '<button class="uk-button uk-button-success"> 交易成功 </button>';
+                                break;
+                                case '2';
+                                echo '<button class="uk-button uk-button-danger"> 交易失败 </button>';
+                                break;
+                                case '3';
+                                echo '<button class="uk-button uk-button-danger"> 交易取消 </button>';
+                                break;
+                                case '4';
+                                echo '<a href="http://my.alipay.com/" target="_blank"><button class="uk-button uk-button-primary"> 点击收货 </button></a>';
+                                break;
+                                default;
+                                echo '<a href="http://my.alipay.com/" target="_blank"><button class="uk-button"> 等待付款 </button></a>';
+                                break;
+                                }
+                                }else{
+                                 switch($record['state']){
+                                case '1';
+                                echo '<button class="uk-button uk-button-success"> 交易成功 </button>';
+                                break;
+                                case '2';
+                                echo '<button class="uk-button uk-button-danger"> 交易失败 </button>';
+                                break;
+                                default;
+                                echo '<button class="uk-button"> 正在充值 </button>';
+                                break;
+                                }
+                                }
+                            </php>
+                        </td>
+                    </tr>
+                </foreach>
+                </tbody>
+                <!--头部部分-->
+            </table>
+            {$page}
+        </div>
+    </div>
+    <!--中心模块结束-->
+</div>

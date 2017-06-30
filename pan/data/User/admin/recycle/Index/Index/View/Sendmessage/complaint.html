@@ -1,0 +1,118 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid uk-margin-top uk-grid-small uk-margin-bottom">
+    <!--用户中心左侧菜单-->
+    {:W('Menu/User')}
+    <!--菜单结束-->
+    <!--中心模块开始-->
+    <div class="uk-width-8-10">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <h3 class="uk-article-title">{$ActionTitle}</h3>
+            <div class="uk-alert uk-alert-danger">注意：请不要随意投诉，如果发现投诉信息不属实或者恶意投诉，将会直接对你进行封号处理。
+            如果情况属实，我们将做出相应的处理。</div>
+            <hr class="uk-article-divider">
+            <div class="uk-container-center ">
+                <form class="uk-form uk-form-horizontal" action="{:U('Sendmessage/toSendComplaint')}" method="post">
+                    <div class="uk-form-row">
+                        <label for="form-h-it" class="uk-form-label"><span class="uk-h3">标题<sup style="color: red">*</sup></span></label>
+                        <div class="uk-form-controls">
+                            <input type="text" class="uk-width-1-1" name="title" placeholder="Text input" id="form-h-it" value="投诉服务器[{$plugin}]">
+                        </div>
+                    </div>
+                    <div class="uk-form-row">
+                        <label for="upload-drop" class="uk-form-label"><span class="uk-h3">附件</span><br><span>你可以放置图片以便我们排查</span><br>
+                            <span class="box-message" style="display: none;color: #000fff;;">您已经上传了<span id="info"></span>张图片，最多5张</span>
+                        </label>
+
+                        <div class="uk-form-controls">
+                            <div class="message"></div>
+                            <div id="upload-drop" class="uk-placeholder uk-text-center">
+                                <i class="uk-icon-cloud-upload uk-icon-medium uk-text-muted uk-margin-small-right"></i>
+                                将文件拖拽至此 或 <a class="uk-form-file">选择一个或者多个文件（只能是图片）<input id="upload-select" type="file"></a>.
+                            </div>
+                            <!-- 进度条-->
+                            <div id="progressbar" class="uk-progress uk-hidden">
+                                <div class="uk-progress-bar" style="width: 0;">...</div>
+                            </div>
+                            <input type="hidden" name="sid" value="{:I('get.sid')}">
+                        </div>
+                    </div>
+                    <div class="uk-form-row">
+                        <label for="form-h-t" class="uk-form-label"><span class="uk-h3">详细内容<sup style="color: red">*</sup></span></label>
+                        <div class="uk-form-controls">
+                            <textarea placeholder="请填写详细信息，保证我们的工作可以快速进行。" name="content" rows="5" cols="100%" id="form-h-t"></textarea>
+                        </div>
+                    </div>
+                    <div class="uk-form-row">
+                        <label for="form-h-it" class="uk-form-label"><span class="uk-h3">验证码<sup style="color: red">*</sup></span></label>
+                        <div class="uk-form-controls">
+                            <div id="verify" class="verify"><script async src="http://api.geetest.com/get.php?gt={:C('CAPTCHA_ID');}"></script></div>
+                        </div>
+                    </div>
+                    <button type="submit" class="uk-button uk-button-danger uk-float-right uk-button-large uk-margin-top"> 提 交 </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--中心模块结束-->
+</div>
+<script src="/Public/js/components/upload.min.js"></script>
+<script language="JavaScript">
+    var gtcallback;
+        $.ajax({
+            url : "{:U('Register/Verify')}",
+            type : "get",
+            dataType : 'JSON',
+            success : function(result) {
+                gtcallback = result;
+                gee = window.Geetest({
+                    gt:gtcallback['gt'],
+                    challenge:gtcallback['challenge'],
+                    product: "embed"
+                }).appendTo($('.verify'));
+            }
+        });
+</script>
+<script>
+$(function () {
+    var progressbar = $("#progressbar"),
+            bar = progressbar.find('.uk-progress-bar'),
+            message = $('.message');
+            settings = {
+                action: "{:U('/Tools/upImg')}",
+                allow: '*.(jpg|jpeg|gif|png)',
+                params:{sid:{:I('get.sid')}},
+                filelimit:5,
+                loadstart: function () {
+                    bar.css("width", "0%").text("0%");
+                    progressbar.removeClass("uk-hidden");
+                    message.html('<div class="uk-button uk-button-primary">上传中……</div><br>')
+                },
+                progress: function (percent) {
+                    percent = Math.ceil(percent);
+                    bar.css("width", percent + "%").text(percent + "%");
+                },
+                allcomplete: function (response) {
+                    if(response == 'true') {
+                        $('.box-message').show();
+                        message.html('<div class="uk-button uk-button-success">上传成功</div><br>');
+                        bar.css("width", "100%").text("100%");
+                        setTimeout(function () {
+                            progressbar.addClass("uk-hidden");
+                            message.hide();
+                        }, 1000);
+                        $('#info').text($('#info').text()+1);
+                    }else{
+                        message.html('<div class="uk-button uk-button-danger">上传失败</div><br>');
+                        setTimeout(function () {
+                            progressbar.addClass("uk-hidden");
+                            message.hide();
+                        }, 1000);
+                    }
+
+                }
+            };
+    var select = UIkit.uploadSelect($("#upload-select"), settings),
+            drop = UIkit.uploadDrop($("#upload-drop"), settings);
+});
+
+</script>

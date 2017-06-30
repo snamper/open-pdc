@@ -1,0 +1,24 @@
+<php>
+    if(empty($commentData)){
+        echo '想说点啥不？来句吐槽吧！';
+    }
+</php>
+<foreach name="commentData" item="one">
+    <ul class="uk-comment" style="padding-left: 0;margin: 0;">
+        <li style="list-style: none;">
+            <article class="uk-comment" style="padding-left: 0;margin: 0;" data-comment-id="{$one.comid}" id="comment-{$one.comid}">
+                <header class="uk-comment-header" style="border: none;background-color: white;margin: 0;">
+                    <div class="uk-comment-meta">
+                        <span style="vertical-align: middle;">
+                            <span class="username" data-uid="{$one.useruid}">{$one['username']}
+                            </span>{$one['commentdate']}</span>
+                    </div>
+                    <div class="uk-comment-body uk-margin-small-top">
+                        <p>{$one['content']}</p>
+                    </div>
+                </header>
+            </article>
+        </li>
+    </ul>
+    <hr class="uk-panel-divider" style="margin: 0;">
+</foreach>

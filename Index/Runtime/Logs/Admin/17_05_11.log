@@ -1,0 +1,66 @@
+[ 2017-05-11T14:47:00+08:00 ] 223.104.1.132 /Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `pdc_user` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `pdc_user` WHERE `UserName` = 'HyperLife' AND `UID` = 3 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT `Action` FROM `pdc_user` WHERE ( uid = 3 ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT * FROM `pdc_user` WHERE `UserName` = 'HyperLife' AND `UID` = 3 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `pdc_user` WHERE ( action = 11 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `pdc_message` [ RunTime:0.0101s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pdc_message` WHERE ( receiveuid = 1  and type='0' and state='0' ) LIMIT 1   [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pdc_message` WHERE ( receiveuid = 1  and type='0' and state='0' ) LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pdc_message` WHERE ( receiveuid = 1  and type='0' and state='1' ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pdc_user` LIMIT 1   [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `pdc_comment` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pdc_comment` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pdc_plugin` [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pdc_plugin` LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2017-05-11T14:47:03+08:00 ] 223.104.1.132 /admin/index/plugincheck.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `pdc_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `pdc_user` WHERE `UserName` = 'HyperLife' AND `UID` = 3 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `Action` FROM `pdc_user` WHERE ( uid = 3 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `pdc_user` WHERE `UserName` = 'HyperLife' AND `UID` = 3 LIMIT 1   [ RunTime:0.0038s ]
+SQL: SELECT * FROM `pdc_user` WHERE ( action = 11 ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `pdc_message` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pdc_message` WHERE ( receiveuid = 1  and type='0' and state='0' ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pdc_message` WHERE ( receiveuid = 1  and type='0' and state='0' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pdc_message` WHERE ( receiveuid = 1  and type='0' and state='1' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `pdc_plugin` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `pdc_plugin` WHERE `PluginState` = 0 ORDER BY UpdateTime asc,PID asc LIMIT 0,30   [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pdc_plugin` LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+

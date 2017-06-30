@@ -1,0 +1,37 @@
+<layout name="home" /><!--调用布局的模板-->
+<div class="uk-grid  uk-panel uk-panel-box uk-panel-box-secondary uk-margin-large-top">
+    <div class="uk-width-1-1">
+        <div class="uk-article uk-width-1-1">
+            <h1 class="uk-article-title">帮助中心</h1>
+            <p class="uk-article-meta">请选择用户类型</p>
+            <a class=" uk-panel uk-panel-hover" href="{:U('/Wiki/term')}" target="_blank">
+                <i class="uk-icon-info"></i>&nbsp;&nbsp;&nbsp;&nbsp;用户条款
+            </a>
+            <a class="user2 user3 uk-panel uk-panel-hover" data-uk-toggle="{target:'#showSystem', animation:'uk-animation-slide-left, uk-animation-slide-bottom'}" onclick="closeAll();" aria-hidden="false">
+                <i class="uk-icon-desktop"></i>&nbsp;&nbsp;我是腐竹
+            </a>
+            <div class="uk-margin-left">
+                <div id="showSystem" class="uk-margin-left userUnableInstall uk-hidden" aria-hidden="false" style="-webkit-animation-duration: 200ms;">
+                    <a class="uk-panel uk-panel-hover" href="{:U('/Wiki/userone')}" target="_blank">
+                        "我购买了服务器要怎么使用？？"
+                    </a>
+                </div>
+            </div>
+            <a class="user1 user3 uk-panel uk-panel-hover" data-uk-toggle="{target:'.user2',animation:'uk-animation-slide-left, uk-animation-slide-bottom'}" aria-hidden="false" style="-webkit-animation-duration: 200ms;">
+                <i class="uk-icon-code "></i>&nbsp;&nbsp;我是版主
+            </a>
+            <div class="uk-hidden uk-margin-left user2" aria-hidden="true">
+                <a class="uk-panel uk-panel-hover" href="{:U('/Wiki/developerone')}" target="_blank">
+                    <i class="uk-icon-windows uk-icon-file-code-o"></i>"如何让自己服务器排名更高？"
+                </a>
+                <a class="uk-panel uk-panel-hover" href="{:U('/Wiki/developertwo')}" target="_blank">
+                    <i class="uk-icon-windows uk-icon-file-code-o"></i>"为什么我的提现申请被拒绝？"
+                </a>
+                <a class="uk-panel uk-panel-hover"  href="{:U('/Wiki/developerthree')}" target="_blank">
+                    <i class="uk-icon-windows uk-icon-file-code-o"></i>"为什么我账户被删除了，降级了?"
+                </a>
+            </div>
+            <p>完善中……</p>
+        </div>
+    </div>
+</div>

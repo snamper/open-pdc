@@ -1,0 +1,122 @@
+<layout name="home" /><!--调用布局的模板-->
+<php>
+	if($Plug['or'] == 0){
+		$Plug['title'] = '[原创] ' . $Plug['title'];
+	} else {
+		$Plug['title'] = '[转载] ' . $Plug['title'];
+	}
+</php>
+<div class="row">
+	<div class="col-md-8" id="mainstay">
+		<article class="zan-post clearfix">
+			<h2>{$Plug.title}</h2>
+			<hr />
+			<span class="label label-success">{:getCatelogue($Plug['catelogue'])}</span>&nbsp;&nbsp;
+			<?php
+				if(preg_match('/,/', $Plug['tags'])){
+					foreach(explode(',', $Plug['tags']) as $tag){
+						echo '<span class="label label-info">'.$tag.'</span>&nbsp;&nbsp;';
+					}
+				} else {
+					echo '<span class="label label-info">'.$Plug['tags'].'</span>';
+				}
+			?>
+			<hr />
+			<textarea id="contentdata" style="display: none;" rows="0" cols="0">{$Plug.content}</textarea>
+            <script>
+            function stripscript(s) { 
+                return s.replace(/<script.*?>.*?<\/script>/ig, ''); 
+            }
+            $(document).ready(function(){
+                $('#content')[0].innerHTML = stripscript($('#contentdata').text());
+                $('#content').find('img').each(function(){
+                    $(this).attr('style', "width: 100%; height: 100%;");
+                });
+            });
+            </script>
+            <div id="content"></div>
+			<hr />
+			<div class="visible-xs-block visible-sm-block">
+				<div class="panel panel-zan">
+				<div class="panel-heading">开发者</div>
+				<div style="margin-left: 20px;margin-top: 10px;margin-right: 20px;padding-bottom: 20px;">
+					<div class="center-block">
+						<?php
+						if($Dev['data']['avatar']){
+                            echo '<img class="uk-border-circle uk-float-left uk-margin-right" src="'.C('HOST').substr($Dev['data']['avatar'],1).'/avatar.jpg-avatar_80.jpg" width="80" height="80" alt="">';
+                            }else{
+                            echo '<img class="uk-border-circle uk-float-left uk-margin-right" src="'.C('HOST').'Public/images/placeholder_avatar.svg" width="80" height="80" alt="">';
+                            }
+						?>
+						<h3>{:getCanseeName($Dev)}</h3>
+						<small class="uk-badge uk-badge-success">{:GetDeveloperLevel($Dev)}</small>
+						<hr />
+						<p class="uk-margin">{:html_entity_decode($Dev['data']['pdata'])}</p>
+					</div>
+				</div>
+				</div>
+				<div class="panel panel-zan">
+				<div class="panel-heading">操作</div>
+				<div style="margin-left: 20px;margin-top: 10px;margin-right: 20px;padding-bottom: 20px;">
+					<button class="btn btn-primary btn-block" onclick="location.href='{:U('/download/index/', array('id' => $Plug['pid']))}'">下载插件</button>
+					<?php
+					if($Plug['mode'] == 1){
+						?><button class="btn btn-primary btn-block" onclick="location.href='{:U('/Download/getZipLoader/')}'">下载Zip插件读取器</button><?php
+					} elseif($Plug['mode'] == 2){
+						?><button class="btn btn-primary btn-block" onclick="location.href='{:U('/Download/getPmcLoader/')}'">下载PmC插件读取器</button><?php
+					} elseif($Plug['mode'] == 4){
+						?><button class="btn btn-primary btn-block" onclick="location.href='{:U('/download/index/', array('id' => $Plug['pid'], 'choose' => 'zip'))}'">下载插件源码</button><?php
+					}?>
+					</div>
+				</div>
+				
+				<hr />
+			</div>
+			<div>
+				{:W('Comment/Sendcomment',array($Plug['pid']))}
+				<div class="uk-panel uk-panel-box uk-panel-box-secondary uk-margin uk-panel-header">
+					<div class="uk-panel uk-panel-title" style="margin: 0;">用户评论：</div>
+					{:W('Comment/Getcomment',array($Plug['pid']))}
+				</div>
+			</div>
+		</article>
+	</div>
+	<aside class="col-md-4 visible-md-block visible-lg-block" id="sidebar">
+		<aside>
+			<div class="panel panel-zan">
+				<div class="panel-heading">开发者</div>
+				<div style="margin-left: 20px;margin-top: 10px;margin-right: 20px;padding-bottom: 20px;">
+					<div class="center-block">
+						<?php
+						if($Dev['data']['avatar']){
+                            echo '<img class="uk-border-circle uk-float-left uk-margin-right" src="'.C('HOST').substr($Dev['data']['avatar'],1).'/avatar.jpg-avatar_80.jpg" width="80" height="80" alt="">';
+                            }else{
+                            echo '<img class="uk-border-circle uk-float-left uk-margin-right" src="'.C('HOST').'Public/images/placeholder_avatar.svg" width="80" height="80" alt="">';
+                            }
+						?>
+						<h3>{:getCanseeName($Dev)}</h3>
+						<small class="uk-badge uk-badge-success">{:GetDeveloperLevel($Dev)}</small>
+						<hr />
+						<p class="uk-margin">{:html_entity_decode($Dev['data']['pdata'])}</p>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<aside>
+			<div class="panel panel-zan">
+				<div class="panel-heading">操作</div>
+				<div style="margin-left: 20px;margin-top: 10px;margin-right: 20px;padding-bottom: 20px;">
+					<button class="btn btn-primary btn-block" onclick="location.href='{:U('/download/index/', array('id' => $Plug['pid']))}'">下载插件</button>
+					<?php
+					if($Plug['mode'] == 1){
+						?><button class="btn btn-primary btn-block" onclick="location.href='{:U('/Download/getZipLoader/')}'">下载Zip插件读取器</button><?php
+					} elseif($Plug['mode'] == 2){
+						?><button class="btn btn-primary btn-block" onclick="location.href='{:U('/Download/getPmcLoader/')}'">下载PmC插件读取器</button><?php
+					} elseif($Plug['mode'] == 4){
+						?><button class="btn btn-primary btn-block" onclick="location.href='{:U('/download/index/', array('id' => $Plug['pid'], 'choose' => 'zip'))}'">下载插件源码</button><?php
+					}?>
+				</div>
+			</div>
+		</aside>
+	</aside>
+</div>

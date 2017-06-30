@@ -1,0 +1,81 @@
+<layout name="adminhome" /><!--调用布局的模板-->
+<div class="clearfix page-title">
+    <h4><i class="icon-shopping-cart"></i>商品列表</h4>
+</div>
+<hr>
+<section class="panel bg bg-black">
+    <header class="panel-heading bg bg-primary text-center">
+        <!--<a class="btn btn-link pull-right nav"><i class="icon-search icon-light icon-xlarge"></i></a>-->
+        <i class="icon-shopping-cart"></i>商品列表
+    </header>
+    <ul class="panel-content list-group list-group-flush m-t-n">
+        <foreach name="list" item="Shop" >
+            <li class="list-group-item bg-inverse" data-toggle="class:active" data-target="#badge-4">
+                <div class="media">
+                  <span class="pull-left thumb-small m-t-mini">
+                    <i class="icon-user icon-xlarge text-primary"></i>
+                  </span>
+                    <div id="badge-4" class="pull-right text-primary m-t-small">
+                        <span class="badge bg-success">{$Shop['sales']}</span>
+                    </div>
+                    <div class="media-body float-left">
+                        <div><a href="{:U('/Shop/'.$Shop['sid']);}" class="h5" target="_blank">{$Shop['shopname']}</a></div>
+                        <switch name="Shop['action']">
+                            <case value="1"><small class=" badge bg-info">{:GetDeveloperLevel($Shop);}</small></case>
+                            <case value="2"><small class=" badge bg-warning">{:GetDeveloperLevel($Shop);}</small></case>
+                            <case value="3">member</case>
+                            <default /><small class=" badge bg-primary">{:GetDeveloperLevel($Shop);}</small>
+                        </switch>
+                        <!--<small class="label bg-primary">233333333</small>-->
+                    </div>
+                    <div class="text-center text-default" >
+                        <span>目录：{:substr($Shop['catalog'],1,-1);}</span><br>
+                        <span>标签：{:substr($Shop['tags'],1,-1);}</span>
+                    </div>
+                </div>
+            </li>
+        </foreach>
+
+        <!--<li class="list-group-item bg-inverse" data-toggle="class:active" data-target="#todo-2">
+            <div class="media">
+                  <span class="pull-left thumb-small m-t-mini">
+                    <i class="icon-user icon-xlarge text-warning"></i>
+                  </span>
+                <div id="todo-2" class="pull-right text-primary m-t-small">
+                    <span class="badge bg-primary">15</span>
+                </div>
+                <div class="media-body float-left">
+                    <div><a href="#" class="h5">XX喳喳</a></div>
+                    <small class=" badge bg-warning">初级版主</small> <small class="label bg-warning">233333333</small>
+                </div>
+                <div class="text-center text-default" >
+                    这里可以写商品的简述，我没想好。后面那个是销量
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item" data-toggle="class:active" data-target="#todo-3">
+            <div class="media">
+                  <span class="pull-left thumb-small m-t-mini">
+                    <i class="icon-user icon-xlarge text-danger"></i>
+                  </span>
+                <div id="todo-3" class="pull-right text-primary m-t-small">
+                    <span class="badge bg-warning">15</span>
+                </div>
+                <div class="media-body float-left">
+                    <div><a href="#" class="h5">XX喳喳插件</a></div>
+                    <small class=" badge bg-danger">中级开发者</small> <small class="label bg-danger">233333333</small>
+                </div>
+                <div class="text-center text-default" >
+                    这里可以写商品的简述，我没想好。
+                    <br>
+                    测试换行
+                </div>
+            </div>
+        </li>
+        -->
+        <li style="padding-top: 8px;" class="bg-info"><div class="text-center">
+            {$page}
+        </div>
+        </li>
+    </ul>
+</section>

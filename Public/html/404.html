@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面找不到了…………</title>
+    <style>
+        body{
+            background:url('../images/404.png');
+            margin:0; padding:0; overflow:hidden; height:100%
+        }
+
+        * { margin:0; padding:0;}
+        #test{
+            width:400px;
+            height:200px;
+            position:absolute;
+            left:50%;
+            top:50%;
+            margin:-200px 0 0 -200px
+        }
+        .text{
+            font-size: 25px;
+            color: #ffffff;
+            text-shadow: #8a8a8a 8px 8px 0;
+            line-height:80px;
+            text-align:center;
+        }
+        #button{
+            width: 385px;
+            height: 80px;
+            background:url('../images/button.png') no-repeat;
+            outline: none;
+        }
+        #button:active{
+            background:url('../images/buttonhover.png') no-repeat;
+            outline:none;
+        }
+    </style>
+    <script type="text/javascript">
+        function makeItMiddle() {
+            document.getElementById('test').style.marginTop = (document.getElementsByTagName('body')[0].offsetHeight - document.getElementById('test').offsetHeight) / 2 + 'px';
+        }
+        window.onload = makeItMiddle;
+        window.onresize = makeItMiddle;
+    </script>
+</head>
+<body>
+<div id="test">
+    <p class="text">404<br>你输入的页面找不到了(⊙_⊙;)</p>
+    <br>
+    <a href="/"><button id="button"></button></a>
+</div>
+</body>
+</html>

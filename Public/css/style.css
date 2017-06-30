@@ -1,0 +1,114 @@
+#zan-bodyer .item {
+    width: 285px;
+    float: left;
+    margin: 0 13px 13px 0;
+    border: 1px solid #CCC;
+    background-image: -webkit-linear-gradient(top, #FFF, #F9F9F9);
+    position: static;
+}
+
+#zan-bodyer .item-inner {
+    padding: 10px 15px 10px 8px;
+    position: relative;
+    _position: static;
+}
+
+#zan-bodyer .item a {
+    color: #333;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*new*/
+
+#zan-bodyer .item .item-icon {
+    float: left;
+    margin-right: 10px;
+}
+
+#zan-bodyer .item .item-category {
+    float: right;
+}
+
+#zan-bodyer .item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.4;
+    margin-bottom: 5px;
+    height: 22px;
+    overflow: hidden;
+}
+
+#zan-bodyer .item .item-desc {
+    border-top: 1px solid #DDD;
+    margin-top: 8px;
+    padding: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#zan-bodyer .item .item-bd a {
+    margin-right: 4px;
+}
+
+#zan-bodyer .item .item-ft {
+    text-align: right;
+}
+
+#zan-bodyer .item .item-link {
+    float: left;
+    margin-top: 3px;
+    color: #999;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#zan-bodyer .item a.item-btn {
+    display: inline-block;
+    padding: 3px 12px;
+    text-decoration: none;
+    position: relative;
+}
+
+#zan-bodyer .item a.item-btn::before {
+    content: "";
+    position: absolute;
+    transition: all .2s ease-in-out;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    border-bottom: 2px solid transparent;
+}
+
+#zan-bodyer .item a.item-btn:hover::before {
+    left: 0;
+    right: 0;
+    border-bottom-color: #009a61;
+}
+
+#zan-bodyer .item a.item-btn:hover, #zan-bodyer .item a.item-btn:active {
+}
+
+#zan-bodyer .item .icon, .aside .icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    -webkit-transition-property: background-position;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-property: background-position;
+    -moz-transition-duration: 0.5s;
+    transition-property: background-position;
+    transition-duration: 0.5s;
+}
+
+.tool-holder .item-hd .item-icon img {
+    background: url(http://s2.tool.lu/image/default.png) no-repeat 0 0 #fff;
+}
+
+.item-hd .item-icon img {
+    background: url(//qn11.tool.lu/201510/25/ScUQjUOriNA1Wrqv_250x500.png) no-repeat -999px -999px #fff;
+}

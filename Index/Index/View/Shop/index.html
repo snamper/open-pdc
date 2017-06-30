@@ -1,0 +1,69 @@
+<layout name="home" /><!--调用布局的模板-->
+<!--幻灯部分的主体-->
+<div class="uk-grid uk-margin-top uk-grid-small">
+    <!--定义网格-->
+    <!--偏左主体部分-->
+    <div class="uk-width-large-7-10 uk-width-medium-1-1 uk-width-small-1-1" style="position: relative;">
+        <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+            <!--文章开始-->
+            <!--TODO:分类和标签那要加上超链接-->
+            <div class="uk-article">
+                <h1 class="uk-article-title">{$Shop.shopname}</h1>
+                <div class="uk-article-meta">销售量：{$Shop.sales}&nbsp;|&nbsp;内存:{$Shop.memarylimit}&nbsp;|&nbsp;人数:{$Shop.playersolt}&nbsp;|&nbsp;时间:{$Shop.datelimit}天&nbsp;|&nbsp;版本:{$Shop.version}</div>
+                <hr class="uk-article-divider">
+                <!--转存块-->
+                <textarea id="contentdata" class="uk-hidden" rows="0" cols="0">{$Shop.content}</textarea>
+                <script>
+                    $(document).ready(function(){
+                        var data = $('#contentdata').text();
+                        $('#content').html(data);
+                    });
+
+                </script>
+                <div id="content">
+
+                </div>
+                <hr class="uk-article-divider">
+                <!--循环标签处，TODO：缺少链接-->
+                <div>标签：
+                    <foreach name="Shop.tags" item="Tag">
+                    <div class="uk-badge uk-badge-success uk-margin-small-right">{$Tag}</div>
+                    </foreach>
+                </div>
+            </div>
+            <!--文章end-->
+        </div>
+    </div>
+    <!--偏右的侧栏部分-->
+    <div class="uk-width-large-3-10 uk-hidden-medium uk-hidden-small">
+        <div class="uk-panel uk-panel-box uk-panel-header uk-panel-box-secondary">
+            <div class="uk-panel uk-panel-title">版主</div>
+            <div style="height: 80px" class="uk-vertical-align ">
+                <img class="uk-border-circle uk-float-left uk-margin-right uk-animation-shake uk-animation-hover" src=".{$ShopUser['data']['avatar']}/avatar.jpg-avatar_80.jpg" width="80" height="80" alt="">
+                <div class="uk-vertical-align-middle">
+                    <span class="uk-h3">
+                        {:getCanseeName($ShopUser)}
+                    </span>
+                    <small class="uk-badge uk-badge-success" style="line-height: 22px;font-size: 13px;float: right;margin-left: 20px;">
+                        <php>
+                            echo GetDeveloperLevel($ShopUser);
+                        </php>
+                    </small>
+                </div>
+            </div>
+            <p class="uk-margin">{$ShopUser['data']['pdata']}</p>
+        </div>
+<!--价格块-->
+        <div class="uk-panel uk-panel-box uk-panel-header">
+            <div class="uk-h2 uk-text-center">售价：<i class="uk-icon-money"></i> {$Shop['price']} T币</div><br>
+            <div class="uk-button-group uk-width-1-1">
+                <div class="uk-button uk-button-primary uk-button-large uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1">
+                    <i class="uk-icon-money"></i> 购买</div>
+                <div class="uk-button uk-button-success uk-button-large uk-width-1-2 uk-hidden-medium uk-hidden-small">
+                    <i class="uk-icon-cart-arrow-down"></i> 加入购物车</div>
+            </div>
+        </div>
+    </div>
+    <!--右侧主体结束-->
+</div>
+
